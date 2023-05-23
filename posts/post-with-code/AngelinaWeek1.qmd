@@ -5,7 +5,7 @@ date: "2023-05-23"
 categories: "Week One"
 ---
 
-# My first week with DSPG
+# My First Week with DSPG
 
 During week one, I took a couple data camp courses to get more familiar with topics in R, Github, and web scraping in R.
 
@@ -38,3 +38,5 @@ my_df <- mtcars[1:10,]
 # Construct list with these different elements:
 my_list <- list(my_vector,my_matrix,my_df)
 ```
+
+Soon, I hope to complete these courses: Intermediate R, Web Scraping in R, and AI Fundamentals.
