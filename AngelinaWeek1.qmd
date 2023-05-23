@@ -7,4 +7,4 @@ category: "Week One"
 
 # This is my first blog post.
 
-During the first week of DSPG, I took 
+
