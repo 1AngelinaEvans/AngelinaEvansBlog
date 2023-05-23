@@ -4,12 +4,15 @@ project:
 website:
   title: "AngelinaEvansBlog"
   navbar:
+    background: "purple"
     right:
       - about.qmd
       - icon: github
         href: https://github.com/
       - icon: twitter
         href: https://twitter.com
+      - icon: linkedin
+        href: https://www.linkedin.com/in/angelina-evans/ 
 format:
   html:
     theme: cosmo
