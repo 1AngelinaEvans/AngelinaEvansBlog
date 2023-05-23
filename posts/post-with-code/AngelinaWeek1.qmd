@@ -9,7 +9,7 @@ categories: "Week One"
 
 During week one, I took a couple data camp courses to get more familiar with topics in R, Github, and web scraping in R.
 
-Here is an example of what I did in the Intro to R course. In the code below, there are two vectors: scores and comments.
+Here is an example of what I did in the Intro to R course. In the code below, there are two vectors: scores and comments. The scores represent the ratings of different movies and comments are opinions of viewers.
 
 ```{r}
 scores <- c(4.6, 5, 4.8, 5, 4.2)
@@ -41,4 +41,4 @@ my_list <- list(my_vector,my_matrix,my_df)
 
 Soon, I hope to complete these courses: Intermediate R, Web Scraping in R, and AI Fundamentals.
 
-![Here are two courses I want to complete soon. I also to take the AI fundamentals course. ](data%20camp.jpg){fig-align="center"}
+![Here are two courses I want to complete soon. I also plan to take the AI Fundamentals course.](data%20camp.jpg){fig-align="center"}
