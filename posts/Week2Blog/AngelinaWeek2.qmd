@@ -7,7 +7,7 @@ categories: "Week Two"
 
 # TidyCensus
 
-Kyle Walker's Tutorials introduce TidyCensus in R.
+[Kyle Walker's tutorials](https://walker-data.com/umich-workshop-2023/) introduce TidyCensus in R.
 
 Here is a bar graph showing median income for Story, Grundy, Chickasaw, and Buchanan counties. Also included is each estimate's margin of error.
 
