@@ -7,6 +7,8 @@ categories: "Week Two"
 
 # TidyCensus
 
+![](logo.png){width="307"}
+
 [Kyle Walker's tutorials](https://walker-data.com/umich-workshop-2023/) introduce TidyCensus in R.
 
 Here is a bar graph showing median income for Story, Grundy, Chickasaw, and Buchanan counties. Also included is each estimate's margin of error.
@@ -44,4 +46,4 @@ We also had a GitHub workshop this week to get familiar with GitHub actions. I c
 
 # Things to Work On
 
-Setting up everything, especially the blog posts took a while and I had trouble with getting my changes to show up on GitHub. Thankfully I was able to get help and eventually got everything to show up correctly. I am looking forward to improving my blog pages and trying new things.
+Setting up everything, took a while and I had trouble with getting my changes to show up on GitHub. I especially had trouble with blog post changes. Thankfully, I was able to get help and eventually got everything to show up correctly. I am looking forward to improving my blog pages and trying new things. I also want to get more comfortable with the blog-editing and rendering process.
