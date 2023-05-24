@@ -40,7 +40,7 @@ ggplot(winvest_counties, aes(y = estimate, x = NAME)) +
 
 # GitHub and Blogs
 
-We also had a GitHub workshop this week to get familiar with GitHub actions. I created my own folder and ReadMe DSPG2023 Repo. We also created blogs using quarto/ RStudio.
+We also had a GitHub workshop this week to get familiar with GitHub actions. I created my own folder and ReadMe in the DSPG2023 Repo. We also created blogs using quarto/ RStudio.
 
 # Things to Work On
 
