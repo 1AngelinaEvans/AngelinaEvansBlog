@@ -39,6 +39,6 @@ my_df <- mtcars[1:10,]
 my_list <- list(my_vector,my_matrix,my_df)
 ```
 
-Soon, I hope to complete these courses: Intermediate R, Web Scraping in R, and AI Fundamentals.
+I plan to complete these courses: Intermediate R, Web Scraping in R, and AI Fundamentals.
 
 ![Here are two courses I want to complete soon. I also plan to take the AI Fundamentals course.](data%20camp.jpg){fig-align="center"}

@@ -1,44 +1,39 @@
 ---
-title: "Week 1 Blog"
+title: "Week 2 Blog"
 author: "Angelina Evans"
 date: "2023-05-23"
-categories: "Week One"
+categories: "Week Two"
 ---
 
-# My First Week with DSPG
+# TidyVerse
 
-During week one, I took a couple data camp courses to get more familiar with topics in R, Github, and web scraping in R.
+Kyle Walker's Tutorials introduces TidyCensus in R. 
 
-Here is an example of what I did in the Intro to R course. In the code below, there are two vectors: scores and comments. The scores represent the ratings of different movies and comments are opinions of viewers.
-
-```{r}
-scores <- c(4.6, 5, 4.8, 5, 4.2)
-comments <- c("I would watch it again", "Amazing!", "I liked it", "One of the best movies", "Fascinating plot")
-
-```
-
-I can get the mean of the scores vector by writing:
+Here is a bar graph showing median income for Story, Grundy, Chickasaw, and Buchanan counties. Also included is each estimate's margin of error. 
 
 ```{r}
-mean(scores)
+library(tidycensus)
+library(ggplot2)
+library(tidyverse)
+median_income <- get_acs(
+  geography = "county",
+  variables = "B19013_001",
+  year = 2021
+)
+
+winvest_counties <- get_acs(
+  geography = 'county',
+  state = 'IA',
+  county = c('Story', 'Grundy', 'Chickasaw', 'Buchanan'),
+  variables = "B19013_001",
+  year = 2021,
+  survey = 'acs5' 
+)
+
+ggplot(winvest_counties, aes(y = estimate, x = NAME)) + 
+  ggtitle("Median Income")+
+  geom_bar(stat="identity", color = "#3182bd", fill="#9ecae1")+labs(x="county name",y="dollars")+
+  scale_x_discrete(labels = function(x) str_remove(x, " County, Iowa|, Iowa"))+
+  geom_errorbar(aes(ymin = estimate - moe, ymax = estimate + moe),
+              width = 0.5, linewidth = 0.5)
 ```
-
-Something that was very new to me in R was matrices. I learned how to create them and how to reference specific rows and columns.
-
-```{r}
-# Vector with numerics from 1 up to 10
-my_vector <- 1:10 
-
-# Matrix with numerics from 1 up to 9
-my_matrix <- matrix(1:9, ncol = 3)
-
-# First 10 elements of the built-in data frame mtcars
-my_df <- mtcars[1:10,]
-
-# Construct list with these different elements:
-my_list <- list(my_vector,my_matrix,my_df)
-```
-
-Soon, I hope to complete these courses: Intermediate R, Web Scraping in R, and AI Fundamentals.
-
-![Here are two courses I want to complete soon. I also plan to take the AI Fundamentals course.](data%20camp.jpg){fig-align="center"}
