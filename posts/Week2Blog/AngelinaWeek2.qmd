@@ -7,7 +7,7 @@ categories: "Week Two"
 
 # TidyCensus
 
-![](logo.png){width="307"}
+![](logo.png){width="231"}
 
 [Kyle Walker's tutorials](https://walker-data.com/umich-workshop-2023/) introduce TidyCensus in R.
 
