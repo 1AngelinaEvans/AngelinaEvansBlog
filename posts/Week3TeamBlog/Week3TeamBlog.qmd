@@ -1,0 +1,10 @@
+------------------------------------------------------------------------
+
+---
+title: "Team Blog for Week 3"
+author: "Angelina Evans"
+date: "2023-05-31"
+categories: ["Week 3", "Housing Team"]
+---
+
+# Housing Team Week 3 Recap

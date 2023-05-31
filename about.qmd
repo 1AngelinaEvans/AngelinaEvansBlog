@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: Picture 1.HEIC
+image: Picture 1.JPG
 about:
   template: jolla
   links:
@@ -15,6 +15,8 @@ about:
       href: https://github.com
 ---
 
-#About Angelina
+# About Angelina
 
-Angelina Evans is a senior at the University of Iowa. She is pursuing a major in Geography, as well as minors in Computer Science and Environmental Policy and Planning. Angelina is interested in how GIS and data science can be used to change or understand the world as we know it. In the Fall of 2023, she will begin the first year of the University of Iowa Undergraduate to Graduate (U2G) master\'s degree program in Informatics with a focus in Geoinformatics. In the future, Angelina hopes to use her knowledge to identify problems and provide solutions to environmental and social issues related to climate change, disasters, pollution, health, and wellbeing.
+![](Picture%201.JPG){width="327" height="63"}
+
+Angelina Evans is a senior at the University of Iowa. She is pursuing a major in Geography, as well as minors in Computer Science and Environmental Policy and Planning. Angelina is interested in how GIS and data science can be used to change or understand the world as we know it. In the Fall of 2023, she will begin the first year of the University of Iowa Undergraduate to Graduate (U2G) master's degree program in Informatics with a focus in Geoinformatics. In the future, Angelina hopes to use her knowledge to identify problems and provide solutions to environmental and social issues related to climate change, disasters, pollution, health, and wellbeing.
