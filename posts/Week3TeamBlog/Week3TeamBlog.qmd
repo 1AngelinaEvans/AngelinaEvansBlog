@@ -2,14 +2,14 @@
 title: "Team Blog for Week 3"
 author: "Angelina Evans"
 date: "2023-05-31"
-categories: ["Week 3", "Housing Team"]
+categories: ["Week 3", "Weekly Wrap-ups"]
 ---
 
-# Housing Team Week 3 Recap
+# Housing Team Week 3 Wrap-Up
 
-\## Project Progress
+## \## Project Progress
 
-This week, our group was able to time thinking and talking about:
+This week, our group was able to spend time thinking and talking about:
 
 \- Our takeaways from last week's client meeting
 
@@ -17,18 +17,46 @@ This week, our group was able to time thinking and talking about:
 
 \- Methods to use when working to reach project goals
 
-\- Ways to work together on parts of the project
-
 \- New ideas to add into our project
 
-\- Recurring concerns
+![Current plan for our project.](projectPlan.jpg)
 
-Our group began to come up with a plan to use AI models as well as data we get from the housing assessor websites and Google API to rate houses.
+### -Web Scraping
 
-### Web Scraping 
+We currently have ideas to scrape from housing assessor websites such as [Iowa Assessors](https://iowaassessors.com/) and [Trulia](https://www.trulia.com/). If we are able to successfully do so, images of houses and other information can be utilized to train our AI model(s).
 
-###  
+Angelina and Kailyn focused on learning more about web scraping using R through the DataCamp Course called *Web Scraping in R*. They also began to follow steps for scraping the web using other tutorials.
 
-### AI Modeling
+We also hope to gather images of houses and other data using a Google API.
 
-##good
+### -AI Modeling
+
+This sample model was trained to determine if a house has vegetation or no vegetation. Here are the steps:
+
+![](MicrosoftTeams-image.png){fig-align="center" width="360"}
+
+![](MicrosoftTeams-image%20(1).png){fig-align="center" width="371"}
+
+![](MicrosoftTeams-image%20(2).png){fig-align="center" width="360"}
+
+![](MicrosoftTeams-image%20(3).png){fig-align="center" width="359"}
+
+![](MicrosoftTeams-image%20(4).png){fig-align="center" width="358"}
+
+![](MicrosoftTeams-image%20(5).png){fig-align="center" width="358"}
+
+![](MicrosoftTeams-image%20(6).png){fig-align="center" width="223"}
+
+![](MicrosoftTeams-image%20(7).png){fig-align="center" width="348"}
+
+![](MicrosoftTeams-image%20(8).png){fig-align="center" width="268"}
+
+![](MicrosoftTeams-image%20(9).png){fig-align="center" width="329"}
+
+![](MicrosoftTeams-image%20(10).png){fig-align="center" width="374"}
+
+![](MicrosoftTeams-image%20(11).png){fig-align="center" width="373"}
+
+![](MicrosoftTeams-image%20(12).png){fig-align="center" width="295"}
+
+![](MicrosoftTeams-image%20(13).png){fig-align="center" width="288"}

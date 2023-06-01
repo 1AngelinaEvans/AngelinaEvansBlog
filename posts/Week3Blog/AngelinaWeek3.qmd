@@ -7,27 +7,23 @@ categories: "Week Three"
 
 # Week 3
 
-## Project Progress
-
-This week, our group was able to time thinking and talking about:
-
--    Our takeaways from last week's client meeting
-
--   Project goals
-
--   Methods to use when working to reach project goals
-
--   New ideas to add into our project
-
--   Recurring concerns
-
-Addressing the points above as a group allowed me to get a better idea of our project goals and the directions we should take.
+This week was all about getting a better idea of the project's direction and learning about ways to accomplish our project goals.
 
 ## Web Scraping
 
-One hope for the project is that we can web scrape from housing assessor websites such as [Iowa Assessors](https://iowaassessors.com/) and [Trulia](https://www.trulia.com/). If we are able to successfully do so, we can use images of houses and other information to train our AI model. I focused on learning more about web scraping using R through the DataCamp Course called Web Scraping in R. Before that I also worked on the Intermediate R course to better understand what can be done with R.
+One idea for the project is that we can web scrape from housing assessor websites such as [Iowa Assessors](https://iowaassessors.com/) and [Trulia](https://www.trulia.com/). If we are able to successfully do so, we can use images of houses and other information to train our AI model. I focused on learning more about web scraping using R through the DataCamp Course called Web Scraping in R. Before that I also worked on the Intermediate R course to better understand what can be done with R. I have been trying to understand the web scraping process using DataCamp and other online tutorials.
 
-I also began to start the web scraping process using R.
+We are also trying to gather images of houses and other data using a google API.
+
+![Example of what I have been learning in DataCamp.](Screenshot%202023-06-01%20144040.jpg){width="410"}
+
+![](Screenshot%202023-06-01%20143959.jpg){width="358"}
+
+![Assessor page for buchanan county](Screenshot%202023-06-01%20144214.jpg){width="395"}
+
+## Artificial Intelligence
+
+Something that has been interesting this week is learning how we can use AI to help with our project. I am learning more about AI through the videos: [Getting Started with Python Deep Learning for Beginners](https://www.youtube.com/watch?v=19LQRx78QVU&list=PLgNJO2hghbmiXg5d4X8DURJP9yv9pgjIu&index=2) and [Build a Deep CNN Image Classifier with ANY Images](https://www.youtube.com/watch?v=jztwpsIzEGc), and Gavin's explaining.
 
 ## Things That are Going Well
 
