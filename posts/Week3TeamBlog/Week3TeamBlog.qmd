@@ -1,5 +1,3 @@
-------------------------------------------------------------------------
-
 ---
 title: "Team Blog for Week 3"
 author: "Angelina Evans"
@@ -8,3 +6,29 @@ categories: ["Week 3", "Housing Team"]
 ---
 
 # Housing Team Week 3 Recap
+
+\## Project Progress
+
+This week, our group was able to time thinking and talking about:
+
+\- Our takeaways from last week's client meeting
+
+\- Project goals
+
+\- Methods to use when working to reach project goals
+
+\- Ways to work together on parts of the project
+
+\- New ideas to add into our project
+
+\- Recurring concerns
+
+Our group began to come up with a plan to use AI models as well as data we get from the housing assessor websites and Google API to rate houses.
+
+### Web Scraping 
+
+###  
+
+### AI Modeling
+
+##good

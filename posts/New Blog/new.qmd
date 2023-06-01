@@ -1,5 +1,6 @@
+
 ---
-title: "Week 3 Blog"
+title: "Week 3 Blog" 
 author: "Angelina Evans"
 date: "2023-05-31"
 categories: "Week Three"
@@ -11,7 +12,7 @@ categories: "Week Three"
 
 This week, our group was able to time thinking and talking about:
 
--    Our takeaways from last week's client meeting
+-   Our takeaways from last week's client meeting
 
 -   Project goals
 
