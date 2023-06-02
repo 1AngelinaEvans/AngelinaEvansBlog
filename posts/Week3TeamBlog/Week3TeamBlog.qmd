@@ -17,7 +17,7 @@ This week, our team was able to spend time thinking and talking about:
 
 -   Methods to use when working to reach project goals
 
--   New ideas to add into our project
+-   New ideas for our project
 
 ![A rough plan for our project.](projectPlan.jpg)
 
@@ -29,7 +29,7 @@ This week, our team was able to spend time thinking and talking about:
 
 ### Web Scraping
 
-We currently have ideas to scrape from housing assessor websites such as [Iowa Assessors](https://iowaassessors.com/) and [Trulia](https://www.trulia.com/). If we are able to successfully do so, images of houses and other information can be utilized to train our AI model(s).
+We are currently trying to scrape data from housing assessor websites such as [Iowa Assessors](https://iowaassessors.com/) (data from Beacon and Vanguard) and [Trulia](https://www.trulia.com/). If we are able to successfully do so, images of houses and other information can be utilized to train our AI model(s).
 
 Kailyn and I (Angelina) focused on learning more about web scraping using R through the DataCamp Course called *Web Scraping in R*. We also began to follow steps for scraping the web using other tutorials.
 
@@ -51,7 +51,7 @@ The model was successfully trained and process did not take long.
 
 ![](image6.jpg)
 
-## Things That Went Well This Week
+## Happies
 
 -   Creation of AI model was quicker than anticipated. We can spend more time into other aspects of the project (ex. data collection).
 
@@ -59,7 +59,7 @@ The model was successfully trained and process did not take long.
 
 -   We now have a better idea of the project's methods and goals.
 
-## Things that Did Not Go Well
+## Crappies
 
 -   Starting the web scraping process. When it comes to web scraping, we need to understand more than what the DataCamp course was teaching.
 
