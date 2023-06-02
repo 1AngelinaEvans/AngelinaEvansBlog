@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "AngelinaEvansBlog",
     "section": "",
-    "text": "Week 3 Blog\n\n\n\n\n\n\n\nWeek Three\n\n\n\n\n\n\n\n\n\n\n\nMay 31, 2023\n\n\nAngelina Evans\n\n\n\n\n\n\n  \n\n\n\n\nTeam Blog for Week 3\n\n\n\n\n\n\n\nWeek 3\n\n\nWeekly Wrap-ups\n\n\n\n\n\n\n\n\n\n\n\nMay 31, 2023\n\n\nAngelina Evans\n\n\n\n\n\n\n  \n\n\n\n\nWeek 1 Blog\n\n\n\n\n\n\n\nWeek One\n\n\n\n\n\n\n\n\n\n\n\nMay 23, 2023\n\n\nAngelina Evans\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 2 Blog\n\n\n\n\n\n\n\nWeek Two\n\n\n\n\n\n\n\n\n\n\n\nMay 23, 2023\n\n\nAngelina Evans\n\n\n\n\n\n\nNo matching items"
+    "text": "Week 3 Blog\n\n\n\n\n\n\n\nWeek Three\n\n\n\n\n\n\n\n\n\n\n\nMay 31, 2023\n\n\nAngelina Evans\n\n\n\n\n\n\n  \n\n\n\n\nWeek 3 Wrap-Up\n\n\n\n\n\n\n\nWeek 3\n\n\nWeekly Wrap-ups\n\n\n\n\n\n\n\n\n\n\n\nMay 31, 2023\n\n\nAngelina Evans\n\n\n\n\n\n\n  \n\n\n\n\nWeek 1 Blog\n\n\n\n\n\n\n\nWeek One\n\n\n\n\n\n\n\n\n\n\n\nMay 23, 2023\n\n\nAngelina Evans\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 2 Blog\n\n\n\n\n\n\n\nWeek Two\n\n\n\n\n\n\n\n\n\n\n\nMay 23, 2023\n\n\nAngelina Evans\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/Week1Blog/AngelinaWeek1.html",
@@ -37,7 +37,7 @@
   {
     "objectID": "posts/Week3TeamBlog/Week3TeamBlog.html",
     "href": "posts/Week3TeamBlog/Week3TeamBlog.html",
-    "title": "Team Blog for Week 3",
+    "title": "Week 3 Wrap-Up",
     "section": "",
     "text": "This week, our team was able to spend time thinking and talking about:\n\nOur takeaways from last week’s client meeting\nProject goals\nMethods to use when working to reach project goals\nNew ideas to add into our project\n\n\n\n\nA rough plan for our project.\n\n\n\n\n\nWeb Scraping in R\nIntermediate R\n\n\n\n\nWe currently have ideas to scrape from housing assessor websites such as Iowa Assessors and Trulia. If we are able to successfully do so, images of houses and other information can be utilized to train our AI model(s).\nKailyn and I (Angelina) focused on learning more about web scraping using R through the DataCamp Course called Web Scraping in R. We also began to follow steps for scraping the web using other tutorials.\n\n\n\nTo get an idea of how to use AI for the project, a sample model was trained to determine if a house has vegetation or no vegetation. About 750 images in total were used to train, validate and test the model.\nThe model was successfully trained and process did not take long.\n\n\n\n\n\n\n\n\n\n\n\nCreation of AI model was quicker than anticipated. We can focus more time into other aspects of the project (ex. data collection)\nKailyn was able to set up her blog!\nWe now have a better idea of the project’s methods and goals.\n\n\n\n\n\nWhen it comes to web scraping, we need to understand more than what the DataCamp course was teaching. It was a bit confusing.\n\n\n\n\n\nGet a rough database running with housing info. We may be able to utilize a web interface that will allow us to more efficiently get data.\nFamiliarize ourselves with web scraping.\nMeet with client(s) to show the project’s progress.\nScrape data from Iowa Accessors site for Independence, Slater, New Hampton, Grundy Center, or other cities. \n\n\n\n\nHow many of you have some web scraping experience?"
   }
