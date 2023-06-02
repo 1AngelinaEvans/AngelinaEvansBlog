@@ -53,7 +53,7 @@ The model was successfully trained and process did not take long.
 
 ## Things That Went Well This Week
 
--   Creation of AI model was quicker than anticipated. We can focus more time into other aspects of the project (ex. data collection)
+-   Creation of AI model was quicker than anticipated. We can spend more time into other aspects of the project (ex. data collection).
 
 -   Kailyn was able to set up her blog!
 
@@ -61,7 +61,7 @@ The model was successfully trained and process did not take long.
 
 ## Things that Did Not Go Well
 
--    When it comes to web scraping, we need to understand more than what the DataCamp course was teaching. It was a bit confusing.
+-   Starting the web scraping process. When it comes to web scraping, we need to understand more than what the DataCamp course was teaching.
 
 ## Some Plans for Next Week
 
