@@ -31,9 +31,7 @@ This week, our team was able to spend time thinking and talking about:
 
 We currently have ideas to scrape from housing assessor websites such as [Iowa Assessors](https://iowaassessors.com/) and [Trulia](https://www.trulia.com/). If we are able to successfully do so, images of houses and other information can be utilized to train our AI model(s).
 
-Kailyn and I focused on learning more about web scraping using R through the DataCamp Course called *Web Scraping in R*. We also began to follow steps for scraping the web using other tutorials.
-
-The housing team also hopes to gather images of houses and other data using a Google API.
+Kailyn and I (Angelina) focused on learning more about web scraping using R through the DataCamp Course called *Web Scraping in R*. We also began to follow steps for scraping the web using other tutorials.
 
 ### AI Modeling: Vegetation Model
 
@@ -41,7 +39,17 @@ To get an idea of how to use AI for the project, a sample model was trained to d
 
 The model was successfully trained and process did not take long.
 
-[See the steps here.](file:///C:/Users/babyn/OneDrive/Desktop/Summer%20DPSG/Angelina_Evans_Blog/AngelinaEvansBlog/posts/Week3TeamBlog/AI%20Modeling%20Steps.pdf)
+![](image1.jpg)
+
+![](image2.jpg)
+
+![](image3.jpg)
+
+![](image4.jpg)
+
+![](image5.jpg)
+
+![](image6.jpg)
 
 ## Things That Went Well This Week
 
@@ -53,7 +61,7 @@ The model was successfully trained and process did not take long.
 
 ## Things that Did Not Go Well
 
--   Learning to web scrape has been a bit challenging. We need to understand more than what the DataCamp course shared.
+-    When it comes to web scraping, we need to understand more than what the DataCamp course was teaching. It was a bit confusing.
 
 ## Some Plans for Next Week
 
@@ -65,6 +73,6 @@ The model was successfully trained and process did not take long.
 
 -   Scrape data from Iowa Accessors site for Independence, Slater, New Hampton, Grundy Center, or other cities. 
 
-### Questions
+## Questions
 
 How many of you have some web scraping experience?
