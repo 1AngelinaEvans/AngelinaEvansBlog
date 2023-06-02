@@ -7,56 +7,64 @@ categories: ["Week 3", "Weekly Wrap-ups"]
 
 # Housing Team Week 3 Wrap-Up
 
-## \## Project Progress
+## Project Progress
 
-This week, our group was able to spend time thinking and talking about:
+This week, our team was able to spend time thinking and talking about:
 
-\- Our takeaways from last week's client meeting
+-   Our takeaways from last week's client meeting
 
-\- Project goals
+-   Project goals
 
-\- Methods to use when working to reach project goals
+-   Methods to use when working to reach project goals
 
-\- New ideas to add into our project
+-   New ideas to add into our project
 
-![Current plan for our project.](projectPlan.jpg)
+![A rough plan for our project.](projectPlan.jpg)
 
-### -Web Scraping
+### DataCamp Courses Completed
+
+-   Web Scraping in R
+
+-   Intermediate R
+
+### Web Scraping
 
 We currently have ideas to scrape from housing assessor websites such as [Iowa Assessors](https://iowaassessors.com/) and [Trulia](https://www.trulia.com/). If we are able to successfully do so, images of houses and other information can be utilized to train our AI model(s).
 
-Angelina and Kailyn focused on learning more about web scraping using R through the DataCamp Course called *Web Scraping in R*. They also began to follow steps for scraping the web using other tutorials.
+Kailyn and I focused on learning more about web scraping using R through the DataCamp Course called *Web Scraping in R*. We also began to follow steps for scraping the web using other tutorials.
 
-We also hope to gather images of houses and other data using a Google API.
+The housing team also hopes to gather images of houses and other data using a Google API.
 
-### -AI Modeling
+### AI Modeling: Vegetation Model
 
-This sample model was trained to determine if a house has vegetation or no vegetation. Here are the steps:
+To get an idea of how to use AI for the project, a sample model was trained to determine if a house has vegetation or no vegetation. About 750 images in total were used to train, validate and test the model.
 
-![](MicrosoftTeams-image.png){fig-align="center" width="360"}
+The model was successfully trained and process did not take long.
 
-![](MicrosoftTeams-image%20(1).png){fig-align="center" width="371"}
+[See the steps here.](file:///C:/Users/babyn/OneDrive/Desktop/Summer%20DPSG/Angelina_Evans_Blog/AngelinaEvansBlog/posts/Week3TeamBlog/AI%20Modeling%20Steps.pdf)
 
-![](MicrosoftTeams-image%20(2).png){fig-align="center" width="360"}
+## Things That Went Well This Week
 
-![](MicrosoftTeams-image%20(3).png){fig-align="center" width="359"}
+-   Creation of AI model was quicker than anticipated. We can focus more time into other aspects of the project (ex. data collection)
 
-![](MicrosoftTeams-image%20(4).png){fig-align="center" width="358"}
+-   Kailyn was able to set up her blog!
 
-![](MicrosoftTeams-image%20(5).png){fig-align="center" width="358"}
+-   We now have a better idea of the project's methods and goals.
 
-![](MicrosoftTeams-image%20(6).png){fig-align="center" width="223"}
+## Things that Did Not Go Well
 
-![](MicrosoftTeams-image%20(7).png){fig-align="center" width="348"}
+-   Learning to web scrape has been a bit challenging. We need to understand more than what the DataCamp course shared.
 
-![](MicrosoftTeams-image%20(8).png){fig-align="center" width="268"}
+## Some Plans for Next Week
 
-![](MicrosoftTeams-image%20(9).png){fig-align="center" width="329"}
+-   Get a rough database running with housing info. We may be able to utilize a web interface that will allow us to more efficiently get data.
 
-![](MicrosoftTeams-image%20(10).png){fig-align="center" width="374"}
+-   Familiarize ourselves with web scraping.
 
-![](MicrosoftTeams-image%20(11).png){fig-align="center" width="373"}
+-   Meet with client(s) to show the project's progress.
 
-![](MicrosoftTeams-image%20(12).png){fig-align="center" width="295"}
+-   Scrape data from Iowa Accessors site for Independence, Slater, New Hampton, Grundy Center, or other cities. 
 
-![](MicrosoftTeams-image%20(13).png){fig-align="center" width="288"}
+### Questions
+
+How many of you have some web scraping experience?
