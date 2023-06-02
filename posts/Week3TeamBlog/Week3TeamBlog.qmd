@@ -31,7 +31,7 @@ This week, our team was able to spend time thinking and talking about:
 
 We are currently trying to scrape data from housing assessor websites such as [Iowa Assessors](https://iowaassessors.com/) (data from Beacon and Vanguard) and [Trulia](https://www.trulia.com/). If we are able to successfully do so, images of houses and other information can be utilized to train our AI model(s).
 
-Kailyn and I (Angelina) focused on learning more about web scraping using R through the DataCamp Course called *Web Scraping in R*. We also began to follow steps for scraping the web using other tutorials.
+Kailyn, Gavin and I (Angelina) focused on learning more about web scraping using R through the DataCamp Course called *Web Scraping in R*. We also began to follow steps for scraping the web using other tutorials.
 
 ### AI Modeling: Vegetation Model
 
@@ -65,13 +65,13 @@ The model was successfully trained and process did not take long.
 
 ## Some Plans for Next Week
 
--   Get a rough database running with housing info. We may be able to utilize a web interface that will allow us to more efficiently get data.
+-   Get a rough database running with housing info. We may be able to utilize a web interface that will allow us to more efficiently filter through houses.
 
 -   Familiarize ourselves with web scraping.
 
 -   Meet with client(s) to show the project's progress.
 
--   Scrape data from Iowa Accessors site for Independence, Slater, New Hampton, Grundy Center, or other cities. 
+-   Finish scraping data for Independence, Slater, New Hampton, Grundy Center, or other cities if needed.  
 
 ## Questions
 
