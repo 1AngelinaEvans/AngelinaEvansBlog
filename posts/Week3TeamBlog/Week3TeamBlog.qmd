@@ -2,7 +2,7 @@
 title: "Week 3 Wrap-Up"
 author: "Angelina Evans"
 date: "2023-05-31"
-categories: ["Week 3", "Weekly Wrap-ups"]
+categories: ["Week Three", "Weekly Wrap-ups"]
 ---
 
 # Housing Team Week 3 Wrap-Up
