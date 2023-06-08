@@ -1,0 +1,46 @@
+---
+title: "Week 4 Blog"
+author: "Angelina Evans"
+date: "2023-06-08"
+categories: "Week Four"
+---
+
+# Week 4
+
+This week was all about data collection and cleaning. We started off by using Mircosoft Excel to clean housing data collected from week three. I used several functions to parse data and create urls to grab images of houses using Google API. Here are some things I learned:
+
+## Using Functions in Excel
+
+I worked on making changes to the the housing datasets for Grundy Center, Iowa. The format was different than what we needed, so using Excel's text to columns I was able to fix the format.
+
+I also used a function to separate parcel ID and address:
+
+=**TRIM(CLEAN(SUBSTITUTE(A1,CHAR(160)," ")))**
+
+I also used text to column to separate names from addresses. I also needed to create urls from the addresses. To create the address uls in excel, I put + signs in between the address spaces by using this:
+
+**=substitute(trim(cell)," ","+")**
+
+To combine the address with the first part of the URL, I use
+
+**=cell&cell**
+
+![]()
+
+## ![](Grundy1.jpg)
+
+![Excel file after fixing format and creating URL. We have done this process for Independence, New Hampton, and Slater, IA.](Grundy2.jpg)
+
+When we click on one of the URL links (after adding an API Key to complete the URL), an image of the house appears. This is the house specified in the address.
+
+For example, I take the URL from cell D2. The image is of ![](grundy%20house.jpg){width="401"}
+
+We hope to use these images to help train our AI models.
+
+## Web Scraping
+
+The most difficult thing this week has definitely been web scraping. Our group hit a wall mid-week and our progress was slow. We had to re-prioritize scraping certain sources because some (Beacon and Vanguard) are protected while others (Zillow, Trulia) are not. We also learned that Trulia is owned by Zillow so our plans to scrape both changed as well. We now aim to scrape data from Zillow and Realtor.com, then find out if there are ways to scrape Beacon and Vanguard legally.
+
+## Things That are Going Well
+
+## Things to Work On
