@@ -1,7 +1,7 @@
 ---
 title: "About Angelina"
-image: Picture 1.JPG
-about:
+image: Angelina.png
+about: 
   template: jolla
   links:
     - icon: twitter

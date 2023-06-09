@@ -1,17 +1,17 @@
 ---
 title: "Week 4 Blog"
 author: "Angelina Evans"
-date: "2023-06-08"
+date: "2023-09-06"
 categories: "Week Four"
 ---
 
 # Week 4
 
-This week was all about data collection and cleaning. We started off by using Mircosoft Excel to clean housing data collected from week three. I used several functions to parse data and create urls to grab images of houses using Google API. Here are some things I learned:
+This week was all about data collection and cleaning. We started off by using Microsoft Excel to clean housing data collected from week three. I used several functions to parse data and create URLs to grab images of houses using Google API. Here are some things I learned:
 
 ## Using Functions in Excel
 
-I worked on making changes to the the housing datasets for Grundy Center, Iowa. The format was different than what we needed, so using Excel's text to columns I was able to fix the format.
+I worked on making changes to the the housing datasets for Grundy Center, Iowa. The format was different than what we needed, so using Excel's Text-to-Columns I was able to fix the format.
 
 I also used a function to separate parcel ID and address:
 
@@ -39,8 +39,67 @@ We hope to use these images to help train our AI models.
 
 ## Web Scraping
 
-The most difficult thing this week has definitely been web scraping. Our group hit a wall mid-week and our progress was slow. We had to re-prioritize scraping certain sources because some (Beacon and Vanguard) are protected while others (Zillow, Trulia) are not. We also learned that Trulia is owned by Zillow so our plans to scrape both changed as well. We now aim to scrape data from Zillow and Realtor.com, then find out if there are ways to scrape Beacon and Vanguard legally.
+We had to re-prioritize scraping certain sources because some (Beacon and Vanguard) are protected while others (Zillow, Trulia) are not. We also learned that Trulia is owned by Zillow so our plans to scrape both changed as well. We now aim to scrape data from Zillow and Realtor.com, then find out if there are ways to scrape Beacon and Vanguard legally. The web scraping has been difficult this week, but as we make more progress we will be able to get more images and housing information from online.
 
-## Things That are Going Well
+During week four I spent time finding ways to scrape the Zillow website. I tried to follow different tutorials and read more about web scraping. By Friday I was finally able to successfully scrape images of houses and addresses for Independence, IA on Zillow. This was the first time I was actually able to successfully scrape something.
+
+Below is some of the code I used to scrape data for the city of Independence. I got the code from my teammate [Gavin](https://gavinfishy.github.io/Gavin_DSPG_Blog/).
+
+```{r}
+#Gathering data for Independence, IA on Zillow
+
+#install packages and load libraries
+install.packages(c("readr", "rvest", "magrittr", "xml2", "RSelenium"))
+library(readr)
+library(rvest)
+library(magrittr)
+library(xml2)
+library(RSelenium)
+
+
+# webpage to scrape. This link is for Independence houses for sale
+zillow_url_inde <- "https://www.zillow.com/independence-ia/?searchQueryState=%7B%22pagination%22%3A%7B%7D%2C%22mapBounds%22%3A%7B%22north%22%3A42.88681926308871%2C%22east%22%3A-91.15901076171875%2C%22south%22%3A42.12347499742446%2C%22west%22%3A-92.61469923828125%7D%2C%22regionSelection%22%3A%5B%7B%22regionId%22%3A12037%2C%22regionType%22%3A6%7D%5D%2C%22isMapVisible%22%3Atrue%2C%22filterState%22%3A%7B%22ah%22%3A%7B%22value%22%3Atrue%7D%2C%22sort%22%3A%7B%22value%22%3A%22days%22%7D%2C%22schm%22%3A%7B%22value%22%3Afalse%7D%2C%22schh%22%3A%7B%22value%22%3Afalse%7D%2C%22schu%22%3A%7B%22value%22%3Afalse%7D%2C%22schp%22%3A%7B%22value%22%3Afalse%7D%2C%22schr%22%3A%7B%22value%22%3Afalse%7D%2C%22sche%22%3A%7B%22value%22%3Afalse%7D%2C%22schc%22%3A%7B%22value%22%3Afalse%7D%2C%22land%22%3A%7B%22value%22%3Afalse%7D%7D%2C%22isListVisible%22%3Atrue%2C%22mapZoom%22%3A9%7D"
+webpage_inde <- read_html(zillow_url_inde)
+
+# gathers addresses. This xpath can be obtained by right clicking on the address you want and clicking inspect.
+# you then must navigate to the html section that contains the text. right click again and go to copy -> full xpath
+# to gather all addresses on page the full xpath must be altered for example this xpath below has li// which signifies select all children where the original xpath would just have li/...
+addresses <- webpage_inde %>%
+  html_nodes(xpath = "/html/body/div[1]/div[5]/div/div/div/div[1]/ul/li//div/div/article/div/div[1]/a/address") %>%
+  html_text()
+print(addresses)
+
+
+# gathers image links. Similar method as above
+image_urls <- webpage_inde %>%
+  html_nodes(xpath = '/html/body/div[1]/div[5]/div/div/div/div[1]/ul/li//div/div/article/div/div[2]/div[2]/div/div[2]/div/div[1]/a/div/img') %>%
+  html_attr("src")
+
+#creates folder for images scraped then names them based on address they were scraped with.
+
+dir.create("images_independence_addresses")
+for (j in seq_along(image_urls)) {
+  address <- addresses[j]
+  file_name <- paste0("Z_D_", address, ".png")
+  file_path <- file.path("put file path here", file_name)
+  download.file(image_urls[j], file_path, mode = "wb")
+  print(file_path)
+  
+  # printing the image urls and addresses so you can see what that looks like.
+  
+  print(image_urls) 
+  print(addresses)
+  
+```
+
+Images have now been downloaded on my personal computer.
+
+![](houses_in_folder.png)
+
+## My Thoughts on Week 4
+
+The weeks are going by pretty fast, but week four felt like one long day because I mostly worked on trying to figure out how to web scrape websites. Figuring out how to web scrape was long, and oftentimes I was stuck. But I am glad I was able to make some progress and get help from others on my team.
 
 ## Things to Work On
+
+Next week I plan to get more comfortable with AI concepts so that I can begin building an AI model for the project.
