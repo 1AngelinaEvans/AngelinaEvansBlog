@@ -84,7 +84,7 @@ for (j in seq_along(image_urls)) {
   file_path <- file.path("put file path here", file_name)
   download.file(image_urls[j], file_path, mode = "wb")
   print(file_path)
-  
+}
   # printing the image urls and addresses so you can see what that looks like.
   
   print(image_urls) 
