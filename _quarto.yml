@@ -15,9 +15,10 @@ website:
         href: https://www.linkedin.com/in/angelina-evans/ 
 format:
   html:
-    monobackgroundcolor: "#f1eef6"
+
     theme: cosmo
     css: styles.css
+    backgroundcolor: "#f1eef6"
     
     
 
