@@ -2,13 +2,13 @@ project:
   type: website
   output-dir: docs
 website:
-  title: "AngelinaEvansBlog"
+  title: "Angelina Evans DPSG Blog"
   navbar:
     background: "purple"
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
+        href: https://github.com/1AngelinaEvans
       - icon: twitter
         href: https://twitter.com
       - icon: linkedin
