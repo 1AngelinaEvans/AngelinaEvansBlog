@@ -53,6 +53,6 @@
     "href": "posts/Week5Blog/AngelinaWeek5.html",
     "title": "Week 5 Blog",
     "section": "",
-    "text": "I am sorting images for the AI model that is used to determine if there is one house in the image or multiple. I sort the images into folders: one for images with one house, another for images with multiple houses. If there is not a house present, or if a building in the image is not a house, these images go in their own folders as well.\n\n\n\nAn image with only one house.\n\n\n\n\n\nAn image with multiple houses.\n\n\n\n\n\nAn image with no houses.\n\n\n\n\n\nThis is not a house."
+    "text": "I am sorting images for the AI model that is used to determine if there is one house in the image or multiple. I sort the images into folders: one for images with one house, another for images with multiple houses. If there is not a house present, or if a building in the image is not a house, these images go in their own folders as well.\n\n\n\nAn image with only one house.\n\n\n\n\n\nAn image with multiple houses.\n\n\n\n\n\nAn image with no houses.\n\n\n\n\n\nThis is not a house.\n\n\n\n\n\nFor the AI Housing project, we need to create some data visualizations that can help us and clients/users to better understand the project and the cities that may benefit from the project. To create maps in R, I need to refresh myself on mapping spatial data in R. I am doing the course called Visualizing Geospatial Data in R."
   }
 ]
