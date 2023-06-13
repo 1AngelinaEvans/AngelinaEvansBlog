@@ -7,4 +7,14 @@ categories: "Week Five"
 
 # Week 5
 
-## 
+## Sorting Houses
+
+I am sorting images for the AI model that is used to determine if there is one house in the image or multiple. I sort the images into folders: one for images with one house, another for images with multiple houses. If there is not a house present, or if a building in the image is not a house, these images go in their own folders as well.
+
+![An image with only one house.](G_S_307%20TAMA%20ST_.png){fig-align="center" width="418"}
+
+![An image with multiple houses.](G_S_305%203RD%20AVE_.png){fig-align="center" width="435"}
+
+![An image with no houses.](G_S_1005%20REDBUD%20DR_.png){fig-align="center" width="442"}
+
+![This is not a house.](G_S_308%20MAIN%20ST_.png){fig-align="center" width="453"}
