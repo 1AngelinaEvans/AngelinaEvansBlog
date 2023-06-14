@@ -21,6 +21,16 @@ This week I worked on sorting images for the AI model that is used to determine 
 
 ![This is not a house.](G_S_308%20MAIN%20ST_.png){fig-align="center" width="332"}
 
+There were many duplicate images in the photos, where pictures of were taken of the same house. I did my best to remove duplicate photos. There were also many files that produced errors and an image of the house was not able to appear. I made sure to remove those as well so the AI does not consider these images in the training.
+
+![Image not available.](image_error.png){width="332"}
+
+## AI Model: Multiple Houses
+
+After I sorted all the Google images for the city of Slater, I am able to train the model that will be used to determine if there is one house in the photo or multiple houses. Below are screenshots of the code used to build the model.
+
+*add screenshots*
+
 ## Geographic Visualizations
 
 For the AI Housing project, we need to create some data visualizations that can help us and clients/users to better understand the project and the cities that may benefit from the project. To create maps in R, I need to refresh myself on mapping spatial data in R. I am doing the course called *Visualizing Geospatial Data in R*. I am also reading Chapter 5 Kyle Walker's Tidy Census Book. The chapter is [Census Geographic Data and Applications in R](https://walker-data.com/census-r/census-geographic-data-and-applications-in-r.html).
