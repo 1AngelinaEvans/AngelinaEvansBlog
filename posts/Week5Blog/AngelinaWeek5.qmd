@@ -7,9 +7,11 @@ categories: "Week Five"
 
 # Week 5
 
+Preparing images for AI model training, training an AI model, and getting refreshed on mapping spatial data in R were my main focuses of week 5.
+
 ## Sorting Houses
 
-I am sorting images for the AI model that is used to determine if there is one house in the image or multiple. I sort the images into folders: one for images with one house, another for images with multiple houses. If there is not a house present, or if a building in the image is not a house, these images go in their own folders as well.
+This week I worked on sorting images for the AI model that is used to determine if there is one house in the image or multiple. I sort the images into folders: one for images with one house, another for images with multiple houses. If there is not a house present, or if a building in the image is not a house, these images go in their own folders as well.
 
 ![An image with only one house.](G_S_307%20TAMA%20ST_.png){fig-align="center" width="332"}
 
@@ -21,4 +23,10 @@ I am sorting images for the AI model that is used to determine if there is one h
 
 ## Geographic Visualizations
 
-For the AI Housing project, we need to create some data visualizations that can help us and clients/users to better understand the project and the cities that may benefit from the project. To create maps in R, I need to refresh myself on mapping spatial data in R. I am doing the course called *Visualizing Geospatial Data in R*.
+For the AI Housing project, we need to create some data visualizations that can help us and clients/users to better understand the project and the cities that may benefit from the project. To create maps in R, I need to refresh myself on mapping spatial data in R. I am doing the course called *Visualizing Geospatial Data in R*. I am also reading Chapter 5 Kyle Walker's Tidy Census Book. The chapter is [Census Geographic Data and Applications in R](https://walker-data.com/census-r/census-geographic-data-and-applications-in-r.html).
+
+#### *Geocoding Problems*
+
+I would like to geocode addresses for this project. I have 6,224 addresses that belong to the four Winvest cities: Slater, New Hampton, Grundy Center, Independence. I want to geocode and plot the addresses using QGIS. I used Google API key to geocode all the addresses. But I am only getting 953/6224 results. Right now I have coordinates for about 607 Slater addresses (all Slater addresses) and the other 300 something are for *some* of New Hampton\'s addresses. QGIS creates an output file of all results where the address was not found.  When I open this output file, it is just blank.
+
+I have also tried geocoding and plotting only 100 addresses as a sample. It was able to geocode 92/100 addresses. But I was not able to see which ones failed and why. The output file of failed addresses was also blank. I am using MMQGIS. When I try to geocode, MMQGIS crashes but I am able to get output files. I updated MMQGIS but the same thing is happening.
