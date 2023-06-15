@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Angelina Evans">
-<meta name="dcterms.date" content="2024-01-06">
+<meta name="dcterms.date" content="2023-06-14">
 
 <title>Angelina Evans DPSG Blog - Week 5 Blog</title>
 <style>
@@ -130,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 6, 2024</p>
+        <p class="date">June 14, 2023</p>
       </div>
     </div>
     
@@ -150,10 +150,10 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="week-5" class="level1">
 <h1>Week 5</h1>
-<p>Preparing images for AI model training, training an AI model, and getting refreshed on mapping spatial data in R were my main focuses of week 5.</p>
+<p>Preparing images for an AI model, training the AI model, and refreshing myself on mapping spatial data in R were my main focuses of week 5.</p>
 <section id="sorting-houses" class="level2">
 <h2 class="anchored" data-anchor-id="sorting-houses">Sorting Houses</h2>
-<p>This week I worked on sorting images for the AI model that is used to determine if there is one house in the image or multiple. I sort the images into folders: one for images with one house, another for images with multiple houses. If there is not a house present, or if a building in the image is not a house, these images go in their own folders as well.</p>
+<p>This week I worked on sorting images for the AI model that is used to determine if there is one house in the image or multiple houses. I sort the images into folders: one for images with one house, another for images with multiple houses. If there is not a house present, or if a building in the image is not a house, these images go in their own folders as well. Below are some examples of photos that belong to each category. Because I was the one sorting the model, I had to determine what qualified as an image with one house, multiple houses, no house or what was not a house. The images that had no house or not a house are not being used for the model, but it is helpful to sort these for other models that may be built or ones that could benefit from more images (ex. House present or not present model).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="G_S_307 TAMA ST_.png" class="img-fluid figure-img" width="332"></p>
@@ -178,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
 <p></p><figcaption class="figure-caption">This is not a house.</figcaption><p></p>
 </figure>
 </div>
-<p>There were many duplicate images in the photos, where pictures of were taken of the same house. I did my best to remove duplicate photos. There were also many files that produced errors and an image of the house was not able to appear. I made sure to remove those as well so the AI does not consider these images in the training.</p>
+<p>There were many duplicate images in the photos, where pictures were taken of the same house. I did my best to remove duplicate photos. There were also many files that produced errors and an image of the house was not able to appear. I made sure to remove those as well so the AI does not consider these images in the training.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="image_error.png" class="img-fluid figure-img" width="332"></p>
@@ -188,19 +188,70 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="ai-model-multiple-houses" class="level2">
 <h2 class="anchored" data-anchor-id="ai-model-multiple-houses">AI Model: Multiple Houses</h2>
-<p>After I sorted all the Google images for the city of Slater, I am able to train the model that will be used to determine if there is one house in the photo or multiple houses. Below are screenshots of the code used to build the model.</p>
-<p><em>add screenshots</em></p>
+<p>After I sorted all the Google images for the city of Slater, I am able to train the model that will be used to determine if there is one house in the photo or multiple houses. Below are screenshots showing the accuracy of the model, training outputs, and a test for the model. This is a work in progress, so I still have to work on better training the model. You can see that there is straight line, which is not supposed to be the case. I am working on identifying and fixing the issues with my model training.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="multiple_houses_model_accuracy.png" class="img-fluid figure-img" width="344"></p>
+<p></p><figcaption class="figure-caption">Accuracy of the model.</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="screenshot_of_AI_training_multiple_houses.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Training the model. 1 means there are multiple houses in the image, and 2 means there is only one house.</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="multiple_houses_test_photo.png" class="img-fluid figure-img" width="408"></p>
+<p></p><figcaption class="figure-caption">My test photo. When I feed the image to the model, the output should say: “Multiple houses”.</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="multiple_houses_test_output.png" class="img-fluid figure-img" width="371"></p>
+<p></p><figcaption class="figure-caption">In this case, the model is correct!</figcaption><p></p>
+</figure>
+</div>
+<p>Another issue with the model is that it has three classes instead of two. I am supposed to have 1s or 0s as output for training, but there are 1s and 2s. We are not fully sure why I have three classes instead of two, but will work more on this later. It is most likely a simple issue to resolve.</p>
 </section>
 <section id="geographic-visualizations" class="level2">
 <h2 class="anchored" data-anchor-id="geographic-visualizations">Geographic Visualizations</h2>
 <p>For the AI Housing project, we need to create some data visualizations that can help us and clients/users to better understand the project and the cities that may benefit from the project. To create maps in R, I need to refresh myself on mapping spatial data in R. I am doing the course called <em>Visualizing Geospatial Data in R</em>. I am also reading Chapter 5 Kyle Walker’s Tidy Census Book. The chapter is <a href="https://walker-data.com/census-r/census-geographic-data-and-applications-in-r.html">Census Geographic Data and Applications in R</a>.</p>
 <section id="geocoding-problems" class="level4">
 <h4 class="anchored" data-anchor-id="geocoding-problems"><em>Geocoding Problems</em></h4>
-<p>I would like to geocode addresses for this project. I have 6,224 addresses that belong to the four Winvest cities: Slater, New Hampton, Grundy Center, Independence. I want to geocode and plot the addresses using QGIS. I used Google API key to geocode all the addresses. But I am only getting 953/6224 results. Right now I have coordinates for about 607 Slater addresses (all Slater addresses) and the other 300 something are for <em>some</em> of New Hampton's addresses. QGIS creates an output file of all results where the address was not found. &nbsp;When I open this output file, it is just blank.</p>
+<p>I would like to geocode addresses for this project. I have 6,224 addresses that belong to the four Winvest cities: Slater, New Hampton, Grundy Center, Independence. I want to geocode and plot the addresses using QGIS. I used Google API key to geocode all the addresses. But I am only getting 953/6224 results. Right now I have coordinates for about 607 Slater addresses (all Slater addresses) and the other 300 something are for <em>some</em> of New Hampton’s addresses. QGIS creates an output file of all results where the address was not found. &nbsp;When I open this output file, it is just blank.</p>
 <p>I have also tried geocoding and plotting only 100 addresses as a sample. It was able to geocode 92/100 addresses. But I was not able to see which ones failed and why. The output file of failed addresses was also blank.&nbsp;I am using MMQGIS. When I try to geocode, MMQGIS crashes but I am able to get output files. I updated MMQGIS but the same thing is happening.</p>
-
-
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="geocoding_four_cities_output.png" class="img-fluid figure-img" width="324"></p>
+<p></p><figcaption class="figure-caption"><img src="Slater_geocoded.png" class="img-fluid figure-img" width="332" alt="Addresses from Slater, IA."></figcaption><p></p>
+</figure>
+</div>
+<p>Addresses from Slater, IA.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="some_NH_geocoded.png" class="img-fluid figure-img" width="330"></p>
+<p></p><figcaption class="figure-caption">Some of the addresses for New Hampton, IA.</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="addresses_w_latlong.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">A screenshot of a csv with some of the addresses that were sucessfully geocoded. The latitude and longitude columns are the result of geocoding with MMQGIS.</figcaption><p></p>
+</figure>
+</div>
 </section>
+</section>
+<section id="gis-conference-in-west-des-moines" class="level2">
+<h2 class="anchored" data-anchor-id="gis-conference-in-west-des-moines">GIS Conference in West Des Moines</h2>
+</section>
+<section id="things-to-work-on" class="level2">
+<h2 class="anchored" data-anchor-id="things-to-work-on">Things to Work On</h2>
+<p>Next week, I want to continue plotting addresses from areas we focused on when getting housing data. Hopefully my geocoding issues will be resolved. I also want to incorporate street basemaps to my maps and create better maps that we could use in our final project reports.</p>
+<p>As previously mentioned, I also want to fix my AI model that determines whether a there is one house in an image or more than one.</p>
+
+
 </section>
 </section>
 
