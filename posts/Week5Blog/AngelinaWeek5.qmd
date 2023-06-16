@@ -59,8 +59,16 @@ Addresses from Slater, IA.
 
 ## GIS Conference in West Des Moines
 
-## Things to Work On
+On Thursday we took a trip to the Iowa Technology and Geographic (ITAG) Council conference. I attended several presentations and visited vendor booths to learn more about the services they offer to state and local government, as well as other companies that assist local communities.
 
-Next week, I want to continue plotting addresses from areas we focused on when getting housing data. Hopefully my geocoding issues will be resolved. I also want to incorporate street basemaps to my maps and create better maps that we could use in our final project reports.
+![There were many vendors selling GIS and IT-related services. Some interns and I stopped by a ransomware vendor table.](interns_at_booth.png){fig-align="center" width="334"}
 
-As previously mentioned, I also want to fix my AI model that determines whether a there is one house in an image or more than one.
+![A presentation on hydrography and wetland modeling in Missouri.](conference_presentation.png){fig-align="center" width="336"}
+
+![Another presentation on ArcGIS field maps.](conference_presentation2.png){fig-align="center" width="319"}
+
+## Things to Work On Next Week
+
+Next week, I want to continue plotting addresses from areas we focused on when getting housing data. Hopefully my geocoding issues will be resolved. I also want to incorporate street basemaps to my maps and create better maps that we could use in our final project reports. Next week I also would like to use outputs provided by the AI models to display presence of houses with good or bad attributes (siding, gutter, etc).
+
+As previously mentioned, I need to fix my AI model that determines whether a there is one house in an image or more than one.
