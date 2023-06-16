@@ -9,6 +9,12 @@ categories: "Week Four"
 
 This week was all about data collection and cleaning. We started off by using Microsoft Excel to clean housing data collected from week three. I used several functions to parse data and create URLs to grab images of houses using Google API. Here are some things I learned:
 
+## Collecting Data in Slater, IA
+
+On Tuesday, we visited the city of Slater, IA to familiarize ourselves with assessing houses for the WINVEST project.
+
+![We practiced using the Fulcrum app on houses and main street businesses. ](slater_trip.jpg){width="421"}
+
 ## Using Functions in Excel
 
 I worked on making changes to the the housing datasets for Grundy Center, Iowa. The format was different than what we needed, so using Excel's Text-to-Columns I was able to fix the format.
@@ -26,8 +32,6 @@ To combine the address with the first part of the URL, I use
 **=cell&cell**
 
 ![]()
-
-## ![](Grundy1.jpg)
 
 ![Excel file after fixing format and creating URL. We have done this process for Independence, New Hampton, and Slater, IA.](Grundy2.jpg)
 
