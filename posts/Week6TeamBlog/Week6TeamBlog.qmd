@@ -37,7 +37,7 @@ While in residential neighborhoods, we also gave general impressions of blocks b
 
 -   Street trees
 
-    ![A screenshot of some of the houses from in New Hampton, IA.](WinVEST3.jpg){width="355"}
+    ![A screenshot of some of the houses from in New Hampton, IA.](WinVEST3.jpg){width="170"}
 
     ![](WinVEST2.jpg){width="341"}
 
