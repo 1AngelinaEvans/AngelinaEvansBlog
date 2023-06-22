@@ -1,15 +1,47 @@
 ---
 title: "Week 6 Wrap-Up"
 author: "Angelina Evans"
-date: "2023-06-21"
-categories: "Week Six", "Weekly Wrap-ups"]
+date: "2023-06-22"
+categories: ["Week Six", "Weekly Wrap-ups"]
 ---
 
 # Housing Team Week 6 Wrap-Up
 
-## WinVEST Project 
+## WinVEST Project
 
-On Monday and Tuesday of week six, the DSPG team travelled to Grundy Center, New Hampton and Independence, Iowa.
+On Monday and Tuesday of week six, the DSPG team traveled to Grundy Center, New Hampton and Independence, Iowa. In groups of 3-4 people, we walked around residential areas and observed the condition of houses and lots. The Fulcrum app was used to record observations. We assigned good, fair and poor ratings to attributes such as:
+
+-   Roof
+
+-   Gutter
+
+-   Landscape
+
+-   Siding
+
+-   Sidewalk to the house
+
+    We also noted whether there was junk or obstructions on the property and took photos of the houses.
+
+While in residential neighborhoods, we also gave general impressions of blocks by observing presence and quality of:
+
+-   Neighborhood sidewalks
+
+-   Street lights
+
+-   Way-finding signs
+
+-   Storm drainage systems
+
+-   Curb cuts
+
+-   Street trees
+
+    ![A screenshot of some of the houses from in New Hampton, IA.](WinVEST3.jpg){width="355"}
+
+    ![](WinVEST2.jpg){width="341"}
+
+![](WinVEST1.jpg){width="298"}
 
 ## Some Plans for Next Week
 
