@@ -9,6 +9,8 @@ categories: ["Week Six", "Weekly Wrap-ups"]
 
 ## WinVEST Project
 
+![New Hampton records in the Fulcrum app.](New%20Hampton%20in%20Fulcrum.png){fig-align="center" width="345"}
+
 On Monday and Tuesday of week six, the DSPG team traveled to Grundy Center, New Hampton and Independence, Iowa. In groups of 3-4 people, we walked around residential areas and observed the condition of houses and lots. The Fulcrum app was used to record observations. We assigned good, fair and poor ratings to attributes such as:
 
 -   Roof
@@ -20,6 +22,8 @@ On Monday and Tuesday of week six, the DSPG team traveled to Grundy Center, New 
 -   Siding
 
 -   Sidewalk to the house
+
+    ![](MicrosoftTeams-image%20(15).png){width="268"}
 
     We also noted whether there was junk or obstructions on the property and took photos of the houses.
 
@@ -37,11 +41,17 @@ While in residential neighborhoods, we also gave general impressions of blocks b
 
 -   Street trees
 
-    ![A screenshot of some of the houses from in New Hampton, IA.](WinVEST3.jpg){width="170"}
-
     ![](WinVEST2.jpg){width="341"}
 
 ![](WinVEST1.jpg){width="298"}
+
+## Demographic Profiles
+
+## Mapping 
+
+![Gutter quality in Slater. Legend is still in progress. The darkest orange is "poor", lighter orange is "fair", and the blue is "good".](Slater%20Sample%20Gutter%20Quality%20Map.png)
+
+## Progress on AI Models
 
 ## Some Plans for Next Week
 
