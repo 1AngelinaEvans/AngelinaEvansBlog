@@ -12,7 +12,7 @@ toc: True
 
 ![New Hampton records in the Fulcrum app.](NewHamptonFulcrum.png){fig-align="center" width="299"}
 
-On Monday and Tuesday of week six, the DSPG group traveled to Grundy Center, New Hampton and Independence, Iowa. In groups of 3-4 people, we walked around residential areas and observed the condition of houses and lots. The Fulcrum app was used to record observations. We assigned good, fair and poor ratings to attributes such as: Roof, gutter, landscape, siding, and sidewalk to the house.
+On Monday and Tuesday of week six, the DSPG group traveled to Grundy Center, New Hampton and Independence, Iowa. In groups of 3-4 people, we walked around residential areas and observed the condition of houses and lots. The Fulcrum app was used to record observations. We assigned good, fair and poor ratings to characteristics such as: Roof, gutter, landscape, siding, and sidewalk to the house.
 
 ![](NoticedSiding.png){fig-align="center" width="335"}
 
@@ -64,7 +64,7 @@ Addresses are plotted in QGIS using the coordinates. There are some addresses th
 
 A sample map was created in which gutter quality for houses in the city are shown.
 
-![Legend is still in progress. The darkest orange is "poor", lighter orange is "fair", and the blue is "good".](Slater_Sample_Gutter_Quality_Map.png){fig-align="center" width="548"}
+![Legend is still in progress. The darkest orange is "poor", lighter orange is "fair", and the blue is "good".](Slater_Sample_Gutter_Quality_Map.png){fig-align="center" width="491"}
 
 ## Meeting with Mason City Assessor
 
