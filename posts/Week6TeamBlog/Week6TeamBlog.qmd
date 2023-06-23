@@ -1,7 +1,7 @@
 ---
 title: "Week 6 Team Wrap-Up"
 author: "Angelina Evans"
-date: "2023-06-22"
+date: "2023-06-23"
 categories: ["Week Six", "Weekly Wrap-ups"]
 ---
 
@@ -104,6 +104,8 @@ It's taking a while to figure out how to write the model's ratings to a csv file
 -   Finish script that will allow us to have the model's outputs in a csv file.
 
 -   Use files to visualize the quality of houses.
+
+-   Further train the models using new images of houses in Des Moines
 
 ## Questions
 
