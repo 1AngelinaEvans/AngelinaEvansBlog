@@ -12,7 +12,7 @@ toc: True
 
 ![New Hampton records in the Fulcrum app.](NewHamptonFulcrum.png){fig-align="center" width="299"}
 
-On Monday and Tuesday of week six, the DSPG team traveled to Grundy Center, New Hampton and Independence, Iowa. In groups of 3-4 people, we walked around residential areas and observed the condition of houses and lots. The Fulcrum app was used to record observations. We assigned good, fair and poor ratings to attributes such as: Roof, gutter, landscape, siding, and sidewalk to the house.
+On Monday and Tuesday of week six, the DSPG group traveled to Grundy Center, New Hampton and Independence, Iowa. In groups of 3-4 people, we walked around residential areas and observed the condition of houses and lots. The Fulcrum app was used to record observations. We assigned good, fair and poor ratings to attributes such as: Roof, gutter, landscape, siding, and sidewalk to the house.
 
 ![](NoticedSiding.png){fig-align="center" width="335"}
 
@@ -106,7 +106,7 @@ It's taking a while to figure out how to write the model's ratings to a csv file
 
 -   Use files to visualize the quality of houses.
 
--   Further train the models using new images of houses in Des Moines
+-   Further train the models using new images of houses in Des Moines.
 
 ## Questions
 
