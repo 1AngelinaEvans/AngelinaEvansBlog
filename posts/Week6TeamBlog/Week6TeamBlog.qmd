@@ -59,7 +59,7 @@ One of the goals of the project has been to provide demographic profiles of thre
 
 ## Progress on AI Models
 
-So far, all models needed have been implemented! Now what is needed is a way to get the model outputs into a format that is useful for us. We need to write the outputs to a csv file. The script below is used to write to a CSV file in the correct attribute column based on the address being evaluated.
+So far, all models needed have been implemented! We hope the accuracy continues to improve the more they are trained. Now what is needed is a way to get the model outputs into a format that is useful for us. We need to write the outputs to a csv file. The script below is used to write to a CSV file in the correct attribute column based on the address being evaluated.
 
 ![](GavinScript1.png){fig-align="center"}
 
