@@ -55,11 +55,25 @@ One of the goals of the project has been to provide demographic profiles of the 
 
 ![](GPopulationChange.png){fig-align="center" width="406"}
 
-![](MedHouseValue.png){fig-align="center" width="361"}
+![](GMedHouseValue.png){fig-align="center"}
 
-![](MedIncome2009.png){fig-align="center" width="396"}
+![](GMedIncome2009.png){fig-align="center"}
 
-## Mapping
+![](GYearBuilt.png){width="475"}
+
+## Progress on AI Models
+
+So far, all models are implemented! Now what is needed is a way to get the model outputs into a format that is useful for us. We need to write the outputs to a csv file. The script below is used to write to a CSV file in the correct attribute column based on the address being evaluated.
+
+![](GavinScript1.png){fig-align="center"}
+
+![](GavinScript2.png){fig-align="center" width="442"}
+
+##  Mapping
+
+Writing model outputs to csv files will be helpful for the mapping process.
+
+In time, we hope to use maps to display well-trained AI model ratings for landscapes, siding, gutters etc. This will allow us and our clients to visualize where better quality homes are vs lower quality.
 
 To visualize addresses for the WinVEST cities and Slater, first we need to geocode them (get a latitude and longitude for each address). This was done using R. Base code was from [storybench](https://www.storybench.org/geocode-csv-addresses-r/).
 
@@ -109,12 +123,40 @@ Addresses are plotted in QGIS using the coordinates. There are some addresses th
 
 #### Preparing to map AI-based data
 
-With the coordinates for Slater and a new field with "Good", "Fair", and "Poor" assigned randomly to each address, a sample map was created in which gutter quality for houses in the city are shown. In time, we hope to use maps to display well-trained AI model ratings for landscapes, siding, gutters etc. This will allow us and our clients to visualize where better quality homes are vs lower quality.
+A sample map was created in which gutter quality for houses in the city are shown.
 
 ![Legend is still in progress. The darkest orange is "poor", lighter orange is "fair", and the blue is "good".](Slater_Sample_Gutter_Quality_Map.png){fig-align="center"}
 
-## Progress on AI Models
+## 
+
+Meeting with Tara (last name?)
+
+On Thursday we met online with Tara, who is a county assessor, and Erin Mullenix, one of our clients. We learned many things from this meeting.
+
+-   Unfortunately, we can't scrape Beacon and Vanguard.
+
+-   We learned about the appraisal process Tara and her team follow.
+
+-   Usually, the outside conditions of a home are a good indicator of what the inside looks like.
+
+#### Minimizing Bias: 
+
+-   no assessing when hungover, having a bad day, or its raining outside.
+
+-   the records are reviewed by another person before being finalized.
+
+## Things That Went Well
+
+## Things That Didn't Go So Well
+
+40 lines of code using the csv library to almost have the previous statement true where it took 10 lines of code using the pandas library to fully work
 
 ## Some Plans for Next Week
+
+-   Meet with Erin Olsen-Douglas and Erin Mullenix (our clients) to give an update on what we have accomplished since last meeting.
+
+-   Continue to work on demographic profile of the four cities (unless ur done)
+
+-   Finish script that will allow us to have the model's outputs in a csv file. Use file(s) to visualize the quality of houses.
 
 ## Questions
