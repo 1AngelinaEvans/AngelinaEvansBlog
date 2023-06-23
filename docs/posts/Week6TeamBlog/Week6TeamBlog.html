@@ -110,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Week 6 Wrap-Up</h1>
+      <h1 class="title">Week 6 Team Wrap-Up</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Week Six</div>
                 <div class="quarto-category">Weekly Wrap-ups</div>
@@ -159,77 +159,87 @@ ul.task-list li input[type="checkbox"] {
 <p></p><figcaption class="figure-caption">New Hampton records in the Fulcrum app.</figcaption><p></p>
 </figure>
 </div>
-<p>On Monday and Tuesday of week six, the DSPG team traveled to Grundy Center, New Hampton and Independence, Iowa. In groups of 3-4 people, we walked around residential areas and observed the condition of houses and lots. The Fulcrum app was used to record observations. We assigned good, fair and poor ratings to attributes such as:</p>
-<ul>
-<li><p>Roof</p></li>
-<li><p>Gutter</p></li>
-<li><p>Landscape</p></li>
-<li><p>Siding</p></li>
-<li><p>Sidewalk to the house</p>
-<p>We also noted whether there was junk or obstructions on the property and took photos of the houses.</p></li>
-</ul>
+<p>On Monday and Tuesday of week six, the DSPG team traveled to Grundy Center, New Hampton and Independence, Iowa. In groups of 3-4 people, we walked around residential areas and observed the condition of houses and lots. The Fulcrum app was used to record observations. We assigned good, fair and poor ratings to attributes such as: Roof, gutter, landscape, siding, and sidewalk to the house.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="NoticedSiding.png" class="img-fluid figure-img" width="335"></p>
 </figure>
 </div>
-<p>While in residential neighborhoods, we also gave general impressions of blocks by observing presence and quality of:</p>
-<ul>
-<li><p>Neighborhood sidewalks</p></li>
-<li><p>Street lights</p></li>
-<li><p>Way-finding signs</p></li>
-<li><p>Storm drainage systems</p></li>
-<li><p>Curb cuts</p></li>
-<li><p>Street trees</p>
-<p><img src="WinVEST2.jpg" class="img-fluid" width="248"></p></li>
-</ul>
+<p>While in residential neighborhoods, we also gave general impressions of blocks by observing presence and quality of: neighborhood sidewalks, street lights, way-finding signs, storm drainage systems, curb cuts and street trees.</p>
 </section>
 <section id="demographic-profiles" class="level2">
 <h2 class="anchored" data-anchor-id="demographic-profiles">Demographic Profiles</h2>
-<p>One of the goals of the project has been to provide demographic profiles of the three cities focused on for the WinVEST project : Independence, New Hampton and Grundy Center. We want to show characteristics related to income and population, and how these characteristics have been changing through the years or how they are expected to change in the future. Several graphs were made in R to show these three cities’ economic and population backgrounds.</p>
+<p>One of the goals of the project has been to provide demographic profiles of three cities: Independence, New Hampton and Grundy Center. We want to show characteristics related to economics, housing and population, and how these characteristics have been changing through the years or how they are expected to change in the future. Several graphs were made in R.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="GMedianHomeValue.png" class="img-fluid figure-img" width="368"></p>
+<p><img src="GMedianHomeValue.png" class="img-fluid figure-img" width="572"></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="GMedIncome.png" class="img-fluid figure-img" width="364"></p>
+<p><img src="GMedIncome.png" class="img-fluid figure-img" width="549"></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="GPopProjections.png" class="img-fluid figure-img" width="418"></p>
+<p><img src="GPopProjections.png" class="img-fluid figure-img" width="560"></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="GPopulationChange.png" class="img-fluid figure-img" width="406"></p>
+<p><img src="GPopulationChange.png" class="img-fluid figure-img" width="563"></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="MedHouseValue.png" class="img-fluid figure-img" width="361"></p>
+<p><img src="GMedHouseValue.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="MedIncome2009.png" class="img-fluid figure-img" width="396"></p>
+<p><img src="GMedIncome2009.png" class="img-fluid figure-img" width="565"></p>
 </figure>
 </div>
+<p><img src="GYearBuilt.png" class="img-fluid" width="581"></p>
+</section>
+<section id="progress-on-ai-models" class="level2">
+<h2 class="anchored" data-anchor-id="progress-on-ai-models">Progress on AI Models</h2>
+<p>So far, all models needed have been implemented! The accuracy will continue to improve the more they are trained. Now what is needed is a way to get the model outputs into a format that is useful for us. We need to write the outputs to a csv file. The script below is used to write to a CSV file in the correct attribute column based on the address being evaluated.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="GavinScript1.png" class="img-fluid figure-img" width="477"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="GavinScript2.png" class="img-fluid figure-img" width="522"></p>
+</figure>
+</div>
+<p>Script is currently being reformatted.</p>
 </section>
 <section id="mapping" class="level2">
 <h2 class="anchored" data-anchor-id="mapping">Mapping</h2>
-<p>To visualize addresses for the WinVEST cities and Slater, first we need to geocode them (get a latitude and longitude for each address). This was done using R. Base code was from <a href="https://www.storybench.org/geocode-csv-addresses-r/">storybench</a>.</p>
-<p>Addresses are plotted in QGIS using the coordinates. There are some addresses that are not in the correct place. For example, there is a point in Marion, which is in Linn County. This point is supposed to be located in Independence, IA. This is something to look into next week.</p>
+<p>One of our clients wishes to see something related to the project in the form of maps. One idea is to use maps to display well-trained AI model ratings for landscapes, siding, gutters etc. This will allow us and our clients to visualize where houses in good condition are versus lower condition.</p>
+<p>To visualize addresses for the WinVEST cities and Slater, first we needed to geocode them (get a latitude and longitude for each address). Base code was from <a href="https://www.storybench.org/geocode-csv-addresses-r/">storybench</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="AllCitiesPoints.png" class="img-fluid figure-img" width="279"></p>
+<p><img src="Geocoding_Script1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<section id="preparing-to-map-ai-based-data" class="level4">
-<h4 class="anchored" data-anchor-id="preparing-to-map-ai-based-data">Preparing to map AI-based data</h4>
-<p>With the coordinates for Slater and a new field with “Good”, “Fair”, and “Poor” assigned randomly to each address, a sample map was created in which gutter quality for houses in the city are shown. In time, we hope to use maps to display well-trained AI model ratings for landscapes, siding, gutters etc. This will allow us and our clients to visualize where better quality homes are vs lower quality.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Geocoding_Script2.png" class="img-fluid figure-img" width="478"></p>
+</figure>
+</div>
+<p>Addresses are plotted in QGIS using the coordinates. There are some addresses that are not in the correct place (highlighted below). This is something to look into next week.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="AllCitiesPoints.png" class="img-fluid figure-img" width="428"></p>
+</figure>
+</div>
+<section id="preparing-to-visualize-ai-generated-data" class="level4">
+<h4 class="anchored" data-anchor-id="preparing-to-visualize-ai-generated-data">Preparing to visualize AI-generated data</h4>
+<p>A sample map was created in which gutter quality for houses in the city are shown.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Slater_Sample_Gutter_Quality_Map.png" class="img-fluid figure-img"></p>
@@ -238,14 +248,47 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 </section>
-<section id="progress-on-ai-models" class="level2">
-<h2 class="anchored" data-anchor-id="progress-on-ai-models">Progress on AI Models</h2>
+<section id="meeting-with-mason-city-assessor" class="level2">
+<h2 class="anchored" data-anchor-id="meeting-with-mason-city-assessor">Meeting with Mason City Assessor</h2>
+<p>On Thursday we met online with Tara Brueggeman, an Assessor for Mason City, and Erin Mullenix, one of our clients. We learned many things from this meeting. These are our main takeaways:</p>
+<ul>
+<li><p>The data provided by Beacon and Vanguard is public <em>but</em> we are not able to web scrape. However, city and county assessor offices can get some data from Vanguard:</p>
+<ul>
+<li>A city/county assessor office has access to the Vanguard assessment data management system. Technically, they <em>can</em> run some customized reports on the data using SQL but many offices, especially in smaller IA communities, don’t know how to get data from the system using SQL.</li>
+</ul></li>
+<li><p>We learned about the appraisal process Tara and her team follow:</p>
+<ol type="1">
+<li><p>Appraisal starts with the use of a blueprint. Find information on number of bedrooms and bathrooms, square footage, and details on basement.</p></li>
+<li><p>Appraiser goes to the house to measure and inspect in-person. They used to go inside houses more often, but now homeowners are less comfortable with that. It does help to take a look at the inside of houses, especially because the inside does not always match blueprint. It’s easier to go inside before a house is sold, if built by a developer. However, the condition of the exterior is usually a good indicator of the condition of the interior.</p></li>
+<li><p>Tara will provide us with Iowa Real Property appraisal manual, which is is given to assessors. This may be useful for us because we could get better ideas of how different characteristics of a house are assessed.</p></li>
+</ol></li>
+<li><p>How they aim to minimize bias when assessing?</p>
+<ul>
+<li><p>No assessing when hungover, having a bad day, or if it’s raining outside.</p></li>
+<li><p>The records are reviewed by another person before being finalized.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="things-that-went-well" class="level2">
+<h2 class="anchored" data-anchor-id="things-that-went-well">Things That Went Well</h2>
+<p>As we get down to the last few weeks, we are beginning to finish up major project tasks.</p>
+</section>
+<section id="things-that-didnt-go-so-well" class="level2">
+<h2 class="anchored" data-anchor-id="things-that-didnt-go-so-well">Things That Didn’t Go So Well</h2>
+<p>It’s taking a while to figure out how to write the model’s ratings to a csv file both effectively and efficiently.</p>
 </section>
 <section id="some-plans-for-next-week" class="level2">
 <h2 class="anchored" data-anchor-id="some-plans-for-next-week">Some Plans for Next Week</h2>
+<ul>
+<li><p>Meet with Erin Olsen-Douglas and Erin Mullenix (our clients) to give an update on what we have accomplished since last meeting. We plan to come prepared with several questions.</p></li>
+<li><p>Create a teaser video and slides for our project.</p></li>
+<li><p>Finish script that will allow us to have the model’s outputs in a csv file.</p></li>
+<li><p>Use files to visualize the quality of houses.</p></li>
+</ul>
 </section>
 <section id="questions" class="level2">
 <h2 class="anchored" data-anchor-id="questions">Questions</h2>
+<p>No questions this week.</p>
 
 
 </section>

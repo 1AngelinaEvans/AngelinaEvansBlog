@@ -11,59 +11,37 @@ categories: ["Week Six", "Weekly Wrap-ups"]
 
 ![New Hampton records in the Fulcrum app.](NewHamptonFulcrum.png){fig-align="center" width="299"}
 
-On Monday and Tuesday of week six, the DSPG team traveled to Grundy Center, New Hampton and Independence, Iowa. In groups of 3-4 people, we walked around residential areas and observed the condition of houses and lots. The Fulcrum app was used to record observations. We assigned good, fair and poor ratings to attributes such as:
-
--   Roof
-
--   Gutter
-
--   Landscape
-
--   Siding
-
--   Sidewalk to the house
+On Monday and Tuesday of week six, the DSPG team traveled to Grundy Center, New Hampton and Independence, Iowa. In groups of 3-4 people, we walked around residential areas and observed the condition of houses and lots. The Fulcrum app was used to record observations. We assigned good, fair and poor ratings to attributes such as: Roof, gutter, landscape, siding, and sidewalk to the house.
 
 ![](NoticedSiding.png){fig-align="center" width="335"}
 
-While in residential neighborhoods, we also gave general impressions of blocks by observing presence and quality of:
-
--   Neighborhood sidewalks
-
--   Street lights
-
--   Way-finding signs
-
--   Storm drainage systems
-
--   Curb cuts
-
--   Street trees
+While in residential neighborhoods, we also gave general impressions of blocks by observing presence and quality of: neighborhood sidewalks, street lights, way-finding signs, storm drainage systems, curb cuts and street trees.
 
 ## Demographic Profiles
 
 One of the goals of the project has been to provide demographic profiles of three cities: Independence, New Hampton and Grundy Center. We want to show characteristics related to economics, housing and population, and how these characteristics have been changing through the years or how they are expected to change in the future. Several graphs were made in R.
 
-![](GMedianHomeValue.png){fig-align="center" width="488"}
+![](GMedianHomeValue.png){fig-align="center" width="572"}
 
-![](GMedIncome.png){fig-align="center" width="480"}
+![](GMedIncome.png){fig-align="center" width="549"}
 
-![](GPopProjections.png){fig-align="center" width="486"}
+![](GPopProjections.png){fig-align="center" width="560"}
 
-![](GPopulationChange.png){fig-align="center" width="493"}
+![](GPopulationChange.png){fig-align="center" width="563"}
 
 ![](GMedHouseValue.png){fig-align="center"}
 
-![](GMedIncome2009.png){fig-align="center"}
+![](GMedIncome2009.png){fig-align="center" width="565"}
 
-![](GYearBuilt.png){width="509"}
+![](GYearBuilt.png){width="581"}
 
 ## Progress on AI Models
 
-So far, all models needed have been implemented! We hope the accuracy continues to improve the more they are trained. Now what is needed is a way to get the model outputs into a format that is useful for us. We need to write the outputs to a csv file. The script below is used to write to a CSV file in the correct attribute column based on the address being evaluated.
+So far, all models needed have been implemented! The accuracy will continue to improve the more they are trained. Now what is needed is a way to get the model outputs into a format that is useful for us. We need to write the outputs to a csv file. The script below is used to write to a CSV file in the correct attribute column based on the address being evaluated.
 
-![](GavinScript1.png){fig-align="center"}
+![](GavinScript1.png){fig-align="center" width="477"}
 
-![](GavinScript2.png){fig-align="center" width="442"}
+![](GavinScript2.png){fig-align="center" width="522"}
 
 Script is currently being reformatted.
 
@@ -73,48 +51,13 @@ One of our clients wishes to see something related to the project in the form of
 
 To visualize addresses for the WinVEST cities and Slater, first we needed to geocode them (get a latitude and longitude for each address). Base code was from [storybench](https://www.storybench.org/geocode-csv-addresses-r/).
 
-```{r eval=FALSE, include=FALSE}
+![](Geocoding_Script1.png){fig-align="center"}
 
-# Geocoding a csv column of "addresses" in R
-install.packages("ggmap")
-#load ggmap
-library(ggmap)
-
-dir.create("geocoded")
-
-# Select the file from the file chooser
-fileToLoad <- file.choose(new = TRUE)
-
-# Read in the CSV data and store it in a variable 
-origAddress <- read.csv(fileToLoad, stringsAsFactors = FALSE)
-
-# Initialize the data frame
-geocoded <- data.frame(stringsAsFactors = FALSE)
-
-# API Key here, TAKE OUT WHEN PUSHING TO GITHUB---DO NOT SHARE KEY
-register_google(key = "key goes here")
-
-# Loop through the addresses to get the latitude and longitude of each address and add it to the
-# origAddress data frame in new columns lat and lon
-for(i in 1:nrow(origAddress))
-{
-  # Print("Working...")
-  result <- geocode(origAddress$Full_Address[i], output = "latlon", source = "google")
-  origAddress$lon[i] <- as.numeric(result[1])
-  origAddress$lat[i] <- as.numeric(result[2])
-  #origAddress$geoAddress[i] <- as.character(result[3])
-}
-
-folder <- "folder path goes here"
-file <- "geocoded_all_cities.csv"
-
-# Write a CSV file containing origAddress to the working directory
-write.csv(origAddress, file.path(folder, file), row.names=FALSE)
-```
+![](Geocoding_Script2.png){fig-align="center" width="478"}
 
 Addresses are plotted in QGIS using the coordinates. There are some addresses that are not in the correct place (highlighted below). This is something to look into next week.
 
-![](AllCitiesPoints.png){fig-align="center" width="409"}
+![](AllCitiesPoints.png){fig-align="center" width="428"}
 
 #### Preparing to visualize AI-generated data
 
@@ -160,7 +103,7 @@ It's taking a while to figure out how to write the model's ratings to a csv file
 
 -   Finish script that will allow us to have the model's outputs in a csv file.
 
--   Use file(s) to visualize the quality of houses.
+-   Use files to visualize the quality of houses.
 
 ## Questions
 
