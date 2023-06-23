@@ -23,8 +23,6 @@ On Monday and Tuesday of week six, the DSPG team traveled to Grundy Center, New 
 
 -   Sidewalk to the house
 
-    We also noted whether there was junk or obstructions on the property and took photos of the houses.
-
 ![](NoticedSiding.png){fig-align="center" width="335"}
 
 While in residential neighborhoods, we also gave general impressions of blocks by observing presence and quality of:
@@ -47,19 +45,19 @@ While in residential neighborhoods, we also gave general impressions of blocks b
 
 One of the goals of the project has been to provide demographic profiles of the three cities focused on for the WinVEST project : Independence, New Hampton and Grundy Center. We want to show characteristics related to income and population, and how these characteristics have been changing through the years or how they are expected to change in the future. Several graphs were made in R to show these three cities' economic and population backgrounds.
 
-![](GMedianHomeValue.png){fig-align="center" width="368"}
+![](GMedianHomeValue.png){fig-align="center" width="488"}
 
-![](GMedIncome.png){fig-align="center" width="364"}
+![](GMedIncome.png){fig-align="center" width="472"}
 
-![](GPopProjections.png){fig-align="center" width="418"}
+![](GPopProjections.png){fig-align="center" width="486"}
 
-![](GPopulationChange.png){fig-align="center" width="406"}
+![](GPopulationChange.png){fig-align="center" width="493"}
 
 ![](GMedHouseValue.png){fig-align="center"}
 
 ![](GMedIncome2009.png){fig-align="center"}
 
-![](GYearBuilt.png){width="475"}
+![](GYearBuilt.png){width="509"}
 
 ## Progress on AI Models
 
@@ -75,7 +73,7 @@ Writing model outputs to csv files will be helpful for the mapping process.
 
 In time, we hope to use maps to display well-trained AI model ratings for landscapes, siding, gutters etc. This will allow us and our clients to visualize where better quality homes are vs lower quality.
 
-To visualize addresses for the WinVEST cities and Slater, first we need to geocode them (get a latitude and longitude for each address). This was done using R. Base code was from [storybench](https://www.storybench.org/geocode-csv-addresses-r/).
+To visualize addresses for the WinVEST cities and Slater, first we needed to geocode them (get a latitude and longitude for each address). Base code was from [storybench](https://www.storybench.org/geocode-csv-addresses-r/).
 
 ```{r eval=FALSE, include=FALSE}
 
@@ -119,7 +117,7 @@ write.csv(origAddress, file.path(folder, file), row.names=FALSE)
 
 Addresses are plotted in QGIS using the coordinates. There are some addresses that are not in the correct place. For example, there is a point in Marion, which is in Linn County. This point is supposed to be located in Independence, IA. This is something to look into next week.
 
-![](AllCitiesPoints.png){fig-align="center" width="279"}
+![](AllCitiesPoints.png){fig-align="center" width="409"}
 
 #### Preparing to map AI-based data
 
