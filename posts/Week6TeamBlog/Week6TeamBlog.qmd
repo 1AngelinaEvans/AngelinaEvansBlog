@@ -30,11 +30,11 @@ One of the goals of the project has been to provide demographic profiles of thre
 
 ![](GPopulationChange.png){fig-align="center" width="541"}
 
-![](GMedHouseValue.png){fig-align="center" width="536"}
+![](GMedHouseValue.png){fig-align="center" width="475"}
 
 ![](GMedIncome2009.png){fig-align="center" width="540"}
 
-![](GYearBuilt.png){width="535"}
+![](GYearBuilt.png){fig-align="center" width="535"}
 
 ## Progress on AI Models
 

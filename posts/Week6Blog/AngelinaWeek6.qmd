@@ -1,7 +1,7 @@
 ---
 title: "Week 6 Blog"
 author: "Angelina Evans"
-date: "2023-06-21"
+date: "2023-06-23"
 categories: "Week Six"
 ---
 
