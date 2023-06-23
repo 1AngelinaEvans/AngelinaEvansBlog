@@ -110,4 +110,4 @@ It's taking a while to figure out how to write the model's ratings to a csv file
 
 ## Questions
 
-What was the weirdest or most shocking conversation with a resident you experienced while collecting data?
+What was the weirdest or most shocking conversation you had with a resident while collecting data?
