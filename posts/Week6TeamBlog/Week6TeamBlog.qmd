@@ -148,7 +148,7 @@ On Thursday we met online with Tara Brueggeman, an Assessor for Mason City, and 
 
 As we get down to the last few weeks, we are beginning to finish up major project tasks.
 
-## Things That Didn't Go So Well This Week
+## Things That Didn't Go So Well
 
 It's taking a while to figure out how to write the model's ratings to a csv file both effectively and efficiently.
 
@@ -163,3 +163,5 @@ It's taking a while to figure out how to write the model's ratings to a csv file
 -   Use file(s) to visualize the quality of houses.
 
 ## Questions
+
+No questions this week.

@@ -7,11 +7,8 @@ categories: "Week Six"
 
 # Week 6
 
-## WinVEST Project 
+## WinVEST Project
 
-The first two days of week six were spent collecting data for neighborhoods in Grundy Center, New Hampton and Independence, Iowa.
-We used the Fulcrum app to record observations about houses and areas in residential neighborhoods.
-
-
+The first two days of week six were spent collecting data for neighborhoods in Grundy Center, New Hampton and Independence, Iowa. We used the Fulcrum app to record observations about houses and areas in residential neighborhoods.
 
 ## 
