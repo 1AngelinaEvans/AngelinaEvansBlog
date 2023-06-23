@@ -3,6 +3,7 @@ title: "Week 6 Team Wrap-Up"
 author: "Angelina Evans"
 date: "2023-06-23"
 categories: ["Week Six", "Weekly Wrap-ups"]
+toc: True
 ---
 
 # Housing Team Week 6 Wrap-Up
@@ -21,19 +22,19 @@ While in residential neighborhoods, we also gave general impressions of blocks b
 
 One of the goals of the project has been to provide demographic profiles of three cities: Independence, New Hampton and Grundy Center. We want to show characteristics related to economics, housing and population, and how these characteristics have been changing through the years or how they are expected to change in the future. Several graphs were made in R.
 
-![](GMedianHomeValue.png){fig-align="center" width="572"}
+![](GMedianHomeValue.png){fig-align="center" width="514"}
 
-![](GMedIncome.png){fig-align="center" width="549"}
+![](GMedIncome.png){fig-align="center" width="506"}
 
-![](GPopProjections.png){fig-align="center" width="560"}
+![](GPopProjections.png){fig-align="center" width="509"}
 
-![](GPopulationChange.png){fig-align="center" width="563"}
+![](GPopulationChange.png){fig-align="center" width="541"}
 
-![](GMedHouseValue.png){fig-align="center"}
+![](GMedHouseValue.png){fig-align="center" width="536"}
 
-![](GMedIncome2009.png){fig-align="center" width="565"}
+![](GMedIncome2009.png){fig-align="center" width="540"}
 
-![](GYearBuilt.png){width="581"}
+![](GYearBuilt.png){width="535"}
 
 ## Progress on AI Models
 
@@ -63,7 +64,7 @@ Addresses are plotted in QGIS using the coordinates. There are some addresses th
 
 A sample map was created in which gutter quality for houses in the city are shown.
 
-![Legend is still in progress. The darkest orange is "poor", lighter orange is "fair", and the blue is "good".](Slater_Sample_Gutter_Quality_Map.png){fig-align="center"}
+![Legend is still in progress. The darkest orange is "poor", lighter orange is "fair", and the blue is "good".](Slater_Sample_Gutter_Quality_Map.png){fig-align="center" width="548"}
 
 ## Meeting with Mason City Assessor
 
