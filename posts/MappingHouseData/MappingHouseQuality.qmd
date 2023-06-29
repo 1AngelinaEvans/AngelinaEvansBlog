@@ -1,0 +1,56 @@
+---
+title: "Geographic Visualization of House Quality"
+author: "Angelina Evans"
+date: "2023-06-29"
+categories: "Mapping"
+toc: True
+---
+
+# Creating Geographic Visualizations of House Quality
+
+## Intro
+
+In this guide, I will be sharing the steps I took to create geographic visualizations in Tableau related to housing quality. To demonstrate the process, I will be using data from the city of Ogden, Iowa. AI Housing team member Gavin created a [guide on evaluating cities](https://gavinfishy.github.io/Gavin_DSPG_Blog/posts/Gavin-Fisher_guide_w7/full_guide.html) using Ogden as an example. In hopes that the data will appear familliar, I will be using the resulting data from his city evaluation guide.
+
+##  Collecting Addresses from City
+
+Steps for address collection and dataset cleaning are shown in the [address collection and cleaning section](https://gavinfishy.github.io/Gavin_DSPG_Blog/posts/Gavin-Fisher_guide_w7/full_guide.html#address-collection-and-cleaning) of Gavin's guide. It is **very important** that you have these things available in the dataset:
+
+-   House number
+
+-   Street name
+
+-   City
+
+-   State
+
+-   Quality of house characteristics you wish to use in your geographic visualizations (ex. AI outputs for siding, vegetation, gutter).
+
+    If you followed the steps in the address collection and cleaning section of Gavin's guide, your dataset might have some columns that look like this:
+
+    ![](Ogden_Database.png)
+
+I suggest creating a new column that has combines contents from address, city, and state. I auto-populated the city column with the city name (Ogden) and the state column with the state name (Iowa). In a new column and new empty cell, I used the & to combine the contents of three columns. My function is:
+
+**=Cell&", "&Cell&", "Cell**
+
+=A2&", "&B2&", "&C2
+
+Then I auto-populated the rest of the cells to utilize the same function.
+
+![](ogden_database_w_address.png){fig-align="center"}
+
+## Geocoding Addresses in R
+
+Using the addresses provided from the dataset, I acquired coordinates that can be used to map the address locations. There are several ways to geocode addresses. If you are familiar with ArcGIS or QGIS, you can use that but I had **major** issues with QGIS geocoding. I used the MMQGIS plugin and had multiple problems. First, it continued to crash and second, I could never successfully geocode all the addresses I needed to. Many of my addresses were missing and other team members had the same issue when using MMQGIS. So I would advise against starting with QGIS, unless it has worked well for you in the past.
+
+You can also use python or R. I geocoded addresses in RStudio. I followed the approach provided by [StoryBench](https://www.storybench.org/geocode-csv-addresses-r/). I made a few changes to the code from StoryBench. The code and steps are shown below.
+
+1.  Start by installing the ggmap package.
+2.  Create a new directory where you would save the file.
+3.  Load in the csv file (Ogden database)
+4.  Create data frames
+5.  Register a google API key. Put the key in the "key goes here" spot.
+6.  For loop: for each address, you receive a latitude and longitude. They should go in their respected columns (lat and long). Line 25 has the column name Full_Address. Change this to the name of the column that has your full addresses.
+
+![](Geocoding_Script1.png)
