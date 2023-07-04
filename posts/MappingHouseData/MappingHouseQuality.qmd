@@ -80,4 +80,4 @@ Once you click "Create", you should be prompted to upload data from your compute
 
 ### 3. Follow this video
 
-{{< https://www.youtube.com/watch?v=X0n0s0gzcvE >}}
+{{< video https://www.youtube.com/watch?v=X0n0s0gzcvE >}}
