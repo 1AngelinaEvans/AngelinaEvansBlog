@@ -159,6 +159,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#create-a-dashboard" id="toc-create-a-dashboard" class="nav-link" data-scroll-target="#create-a-dashboard">4. Create a dashboard</a></li>
   <li><a href="#download-dashboard-as-image" id="toc-download-dashboard-as-image" class="nav-link" data-scroll-target="#download-dashboard-as-image">5. Download dashboard as image</a></li>
   </ul></li>
+  <li><a href="#embedding-dashboard-into-blog." id="toc-embedding-dashboard-into-blog." class="nav-link" data-scroll-target="#embedding-dashboard-into-blog.">Embedding Dashboard into blog.</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul></li>
   </ul>
@@ -257,15 +258,50 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 </section>
+<section id="embedding-dashboard-into-blog." class="level2">
+<h2 class="anchored" data-anchor-id="embedding-dashboard-into-blog.">Embedding Dashboard into blog.</h2>
+
+<div class="tableauPlaceholder" id="viz1688576064213" style="position: relative"><noscript><a href="#"><img alt="New Hampton Siding Quality " src="https://public.tableau.com/static/images/AI/AIHousingVisualizations/NH_Siding_No_Null/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="AIHousingVisualizations/NH_Siding_No_Null"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/AI/AIHousingVisualizations/NH_Siding_No_Null/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en-US"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1688576064213');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+
+</section></section></main></div>
+  
+  
+
+  
+  
+
+
+Trying to display a Tableau page.
+  <script>
+  var containerDiv = document.getElementById("vizContainer"),
+
+          url = "https://public.tableau.com/views/AIHousingVisualizations/NH_Siding_No_Null?:language=en-US&:display_count=n&:origin=viz_share_link",
+
+          options = {
+            hideTabs: true,
+            hideToolbar: true,
+            onFirstInteractive: function() {
+              console.log("Run this code when the viz has finished loading.");
+            }
+          };
+
+        viz = new tableau.Viz(containerDiv, url, options);
+        // Create a viz object and embed it in the container div.
+  </script>
+  
+
+
+
 <section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<h2 data-anchor-id="conclusion">Conclusion</h2>
 <p>This concludes the guide to mapping house quality. Hopefully this has given information that is helpful when preparing and visualizing spatial data. Again, if you’re using Tableau Public, don’t forget save work by publishing. My work has been lost a couple times because I forgot to publish.</p>
 
 
 </section>
-</section>
 
-</main> <!-- /main -->
+
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -399,7 +435,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-</div> <!-- /content -->
+ <!-- /content -->
 
 
 
