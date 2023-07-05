@@ -10,7 +10,7 @@ toc: True
 
 ## Intro
 
-In this guide, I will be sharing the steps I took to create geographic visualizations in Tableau related to housing quality. To demonstrate the process, I will be using data from the city of Ogden, Iowa. AI Housing team member Gavin created a [guide on evaluating cities](https://gavinfishy.github.io/Gavin_DSPG_Blog/posts/Gavin-Fisher_guide_w7/full_guide.html) using Ogden as an example. In hopes that the data will appear familiar, I will be using the resulting data from his city evaluation guide.
+In this guide, I will be sharing the steps I took to create geographic visualizations in Tableau related to housing quality. To demonstrate the process, I will be using data from the city of Ogden, Iowa. Another AI Housing team member, Gavin, created a [guide on evaluating cities](https://gavinfishy.github.io/Gavin_DSPG_Blog/posts/Gavin-Fisher_guide_w7/full_guide.html) using Ogden as an example. In hopes that the data will appear familiar, I will be using the resulting data from his city evaluation guide.
 
 ## Collecting Addresses from City
 
@@ -42,11 +42,11 @@ Then I auto-populated the rest of the cells to utilize the same function.
 
 ## Geocoding Addresses in R
 
-Using the addresses provided from the dataset, I acquired coordinates that can be used to map the address locations. There are several ways to geocode addresses. If you are familiar with ArcGIS or QGIS, you can use that but I had **major** issues with QGIS geocoding. I used the MMQGIS plugin and had multiple problems. First, it continued to crash and second, I could never successfully geocode all the addresses I needed to. Many of my addresses were missing and other team members had the same issue when using MMQGIS. So I would advise against starting with QGIS, unless it has worked well for you in the past.
+Using the addresses provided from the dataset, I acquired coordinates that can be used to map the address locations. There are several ways to geocode addresses. If you are familiar with ArcGIS or QGIS, you can use that but I had major issues with QGIS geocoding. I used the MMQGIS plugin and had multiple problems. First, it continued to crash and second, I could never successfully geocode all the addresses I needed to. Many of my addresses were missing and other team members had the same issue when using MMQGIS. So I would advise against starting with QGIS, unless it has worked well for you in the past.
 
 You can also use python or R. I geocoded addresses in RStudio. I followed the approach provided by [StoryBench](https://www.storybench.org/geocode-csv-addresses-r/). I made a few changes to the code from StoryBench. The code and steps are shown below.
 
-1.  Start by installing the ggmap package.
+1.  Start by installing the ggmap package (no need to install ggplot2 unless you later want to plot addresses in R).
 
 2.  Load in the csv file (Ogden database).
 
@@ -54,7 +54,7 @@ You can also use python or R. I geocoded addresses in RStudio. I followed the ap
 
 4.  Register a Google API key. Put the key in the "key goes here" spot.
 
-5.  For loop: for each address, you receive a latitude and longitude. They should go in their respected columns (lat and long). Line 25 has the column name full_address. Change this to the name of the column that has your full addresses.
+5.  For loop: for each address, you receive a latitude and longitude. They should go in their respected columns (lat and long). Line 26 has the column name full_address. Change this to the name of the column that has your full addresses.
 
 6.  Write the contents of origAddress to a new file (in this case, ogden_geocoded2.csv). Save the new file.
 
@@ -78,7 +78,7 @@ If you are using Tableau Public, be sure to save you work by publishing.
 
 ### 2. Create a new workbook and upload new data
 
-Once you click "Create", you should be prompted to upload data from your computer. Select the csv file you wish to use. I am using ogden_database.csv.
+Once you click "Create", you should be prompted to upload data from your computer. Select the csv file you wish to use.
 
 ### 3. Creating the map
 
@@ -100,16 +100,16 @@ Once you are satisfied with how your map looks, create a new dashboard at the bo
 
 You may wish to continue to experiment with point size, borders and halos once you see how it looks in the dashboard.
 
+You can add more than one sheet to a dashboard. My example uses one sheet, the Ogden siding sheet. In my dashboard, I right-clicked the null attribute and clicked "exclude". Now my map only shows houses with either chipped paint, poor siding or good siding.
+
 ### 5. Download dashboard as image
 
-4.  Once you are complete, you can download the dashboard. I downloaded my dashboard as an image. You can add more than one sheet to a dashboard. My example uses one sheet, the Ogden siding sheet.
-
-    In my dashboard, I right-clicked the null attribute and clicked "exclude". Now my map only shows houses with either chipped paint, poor siding or good siding.
+4.  Once you are satisfied, download the dashboard. I downloaded my dashboard as an image.
 
     From this I am able to see that the siding AI model determined that many of the houses in Ogden have poor siding.
 
     ![](ogden_siding_dashboard.png)
 
-    ### 5. Conclusion
+    ## Conclusion
 
     This concludes the guide to mapping house quality. Hopefully this has given you information that is helpful when preparing and visualizing spatial data. Again, if you're using Tableau Public, don't forget save your work by publishing! My work has been lost a couple times because I forgot to publish).

@@ -173,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
 <h1>Creating Geographic Visualizations of House Quality</h1>
 <section id="intro" class="level2">
 <h2 class="anchored" data-anchor-id="intro">Intro</h2>
-<p>In this guide, I will be sharing the steps I took to create geographic visualizations in Tableau related to housing quality. To demonstrate the process, I will be using data from the city of Ogden, Iowa. AI Housing team member Gavin created a <a href="https://gavinfishy.github.io/Gavin_DSPG_Blog/posts/Gavin-Fisher_guide_w7/full_guide.html">guide on evaluating cities</a> using Ogden as an example. In hopes that the data will appear familiar, I will be using the resulting data from his city evaluation guide.</p>
+<p>In this guide, I will be sharing the steps I took to create geographic visualizations in Tableau related to housing quality. To demonstrate the process, I will be using data from the city of Ogden, Iowa. Another AI Housing team member, Gavin, created a <a href="https://gavinfishy.github.io/Gavin_DSPG_Blog/posts/Gavin-Fisher_guide_w7/full_guide.html">guide on evaluating cities</a> using Ogden as an example. In hopes that the data will appear familiar, I will be using the resulting data from his city evaluation guide.</p>
 </section>
 <section id="collecting-addresses-from-city" class="level2">
 <h2 class="anchored" data-anchor-id="collecting-addresses-from-city">Collecting Addresses from City</h2>
@@ -199,14 +199,14 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="geocoding-addresses-in-r" class="level2">
 <h2 class="anchored" data-anchor-id="geocoding-addresses-in-r">Geocoding Addresses in R</h2>
-<p>Using the addresses provided from the dataset, I acquired coordinates that can be used to map the address locations. There are several ways to geocode addresses. If you are familiar with ArcGIS or QGIS, you can use that but I had <strong>major</strong> issues with QGIS geocoding. I used the MMQGIS plugin and had multiple problems. First, it continued to crash and second, I could never successfully geocode all the addresses I needed to. Many of my addresses were missing and other team members had the same issue when using MMQGIS. So I would advise against starting with QGIS, unless it has worked well for you in the past.</p>
+<p>Using the addresses provided from the dataset, I acquired coordinates that can be used to map the address locations. There are several ways to geocode addresses. If you are familiar with ArcGIS or QGIS, you can use that but I had major issues with QGIS geocoding. I used the MMQGIS plugin and had multiple problems. First, it continued to crash and second, I could never successfully geocode all the addresses I needed to. Many of my addresses were missing and other team members had the same issue when using MMQGIS. So I would advise against starting with QGIS, unless it has worked well for you in the past.</p>
 <p>You can also use python or R. I geocoded addresses in RStudio. I followed the approach provided by <a href="https://www.storybench.org/geocode-csv-addresses-r/">StoryBench</a>. I made a few changes to the code from StoryBench. The code and steps are shown below.</p>
 <ol type="1">
-<li><p>Start by installing the ggmap package.</p></li>
+<li><p>Start by installing the ggmap package (no need to install ggplot2 unless you later want to plot addresses in R).</p></li>
 <li><p>Load in the csv file (Ogden database).</p></li>
 <li><p>Create data frames.</p></li>
 <li><p>Register a Google API key. Put the key in the “key goes here” spot.</p></li>
-<li><p>For loop: for each address, you receive a latitude and longitude. They should go in their respected columns (lat and long). Line 25 has the column name full_address. Change this to the name of the column that has your full addresses.</p></li>
+<li><p>For loop: for each address, you receive a latitude and longitude. They should go in their respected columns (lat and long). Line 26 has the column name full_address. Change this to the name of the column that has your full addresses.</p></li>
 <li><p>Write the contents of origAddress to a new file (in this case, ogden_geocoded2.csv). Save the new file.</p>
 <p><img src="ogden_geocoding_script1.png" class="img-fluid"></p>
 <p><img src="ogden_geocoding_script2.png" class="img-fluid"></p></li>
@@ -224,7 +224,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="create-a-new-workbook-and-upload-new-data" class="level3">
 <h3 class="anchored" data-anchor-id="create-a-new-workbook-and-upload-new-data">2. Create a new workbook and upload new data</h3>
-<p>Once you click “Create”, you should be prompted to upload data from your computer. Select the csv file you wish to use. I am using ogden_database.csv.</p>
+<p>Once you click “Create”, you should be prompted to upload data from your computer. Select the csv file you wish to use.</p>
 </section>
 <section id="creating-the-map" class="level3">
 <h3 class="anchored" data-anchor-id="creating-the-map">3. Creating the map</h3>
@@ -244,15 +244,15 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>You may wish to continue to experiment with point size, borders and halos once you see how it looks in the dashboard.</p>
+<p>You can add more than one sheet to a dashboard. My example uses one sheet, the Ogden siding sheet. In my dashboard, I right-clicked the null attribute and clicked “exclude”. Now my map only shows houses with either chipped paint, poor siding or good siding.</p>
 </section>
 <section id="download-dashboard-as-image" class="level3">
-<h3 class="anchored" data-anchor-id="download-dashboard-as-image">5. Download dashboard as image</h3>
+<h3 class="anchored">5. Download dashboard as image</h3>
 <ol start="4" type="1">
-<li><p>Once you are complete, you can download the dashboard. I downloaded my dashboard as an image. You can add more than one sheet to a dashboard. My example uses one sheet, the Ogden siding sheet.</p>
-<p>In my dashboard, I right-clicked the null attribute and clicked “exclude”. Now my map only shows houses with either chipped paint, poor siding or good siding.</p>
+<li><p>Once you are satisfied, download the dashboard. I downloaded my dashboard as an image.</p>
 <p>From this I am able to see that the siding AI model determined that many of the houses in Ogden have poor siding.</p>
 <p><img src="ogden_siding_dashboard.png" class="img-fluid"></p>
-<h3 id="conclusion" class="anchored">5. Conclusion</h3>
+<h2 id="conclusion" class="anchored" data-anchor-id="download-dashboard-as-image">Conclusion</h2>
 <p>This concludes the guide to mapping house quality. Hopefully this has given you information that is helpful when preparing and visualizing spatial data. Again, if you’re using Tableau Public, don’t forget save your work by publishing! My work has been lost a couple times because I forgot to publish).</p></li>
 </ol>
 
