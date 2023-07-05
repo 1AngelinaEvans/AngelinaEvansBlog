@@ -26,7 +26,7 @@ Steps for address collection and dataset cleaning are shown in the [address coll
 
 -   Quality of house characteristics you wish to use in your geographic visualizations (ex. AI outputs for siding, vegetation, gutter).
 
-    If you followed the steps in the address collection and cleaning section of Gavin's guide, your dataset might have some columns that look like this:
+    If you followed the steps in the address collection and cleaning section of Gavin's guide, the dataset might have some columns that look like this:
 
     ![](Ogden_Database.png)
 
@@ -62,13 +62,17 @@ You can also use python or R. I geocoded addresses in RStudio. I followed the ap
 
     ![](ogden_geocoding_script2.png)
 
-Once you have geocoded the addresses, the latitude and longitude columns should be filled. Remove the NAs from the other columns.
+Once you have geocoded the addresses, the latitude and longitude columns should be filled. I removed the NAs from the other columns.
 
 ![](ogden_geocoded_addresses.png)
 
 ## Mapping house quality ratings using Tableau
 
-There are many different ways you can map these addresses. If you have access to ArcGIS pro, you can use that. I also like using QGIS, an open source software. In this guide I will be using Tableau because this is what I used for my final visualizations. We decided to use Tableau because we needed to create other visualizations (ex. graphs) with the data provided in the csv file.
+There are many different ways to map these addresses. If you have access to ArcGIS pro, you can use that. Also available is QGIS, an open source software. In this guide I will be using Tableau because this is what I used for my final visualizations. We decided to use Tableau because:
+
+I could embed interactive dasboards into the blogs
+
+Having the datasets already in Tableau makes it easier to create other visualizations (ex. graphs) with the data provided in the csv file.
 
 ### 1. Register and download Tableau
 
@@ -94,7 +98,7 @@ At the top of the screen, go to Map -\> Basemap -\> Streets to add a streetmap.
 
 ### 4. Create a dashboard
 
-Once you are satisfied with how your map looks, create a new dashboard at the bottom of the screen. Load in the sheet by dragging the sheet you want to use. In the dashboard, make edits to legend, title, and map scale.
+Create a new dashboard at the bottom of the screen. Load in the sheet by dragging the sheet you want to use. In the dashboard, make edits to legend, title, and map scale.
 
 ![Right-click on legend to find options to change legend colors, attribute names (edit alias), and more.](colors.png){fig-align="center" width="544"}
 
@@ -108,7 +112,7 @@ Once you are satisfied, download the dashboard. I downloaded my dashboard as an 
 
 ![](ogden_siding_dashboard.png){fig-align="center"}
 
-## Embedding dashboard into blog.
+## Embedding Tableau dashboard into blog
 
 I used the code below to embed a dashboard into the blog post. In Tableau, click the share button. Paste the embed link after following the contents of lines 116-120. Also paste the dashboard's URL as shown below in the second image.
 
