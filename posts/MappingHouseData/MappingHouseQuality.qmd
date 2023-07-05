@@ -112,7 +112,7 @@ Once you are satisfied, download the dashboard. I downloaded my dashboard as an 
 
 ![](ogden_siding_dashboard.png){fig-align="center"}
 
-## Embedding Tableau dashboard into blog
+## Embedding Tableau dashboard into a blog
 
 I used the code below to embed a dashboard into the blog post. In Tableau, click the share button. Paste the embed link after following the contents of lines 116-120. Also paste the dashboard's URL as shown below in the second image.
 
