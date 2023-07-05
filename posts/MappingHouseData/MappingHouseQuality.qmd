@@ -62,7 +62,7 @@ You can also use python or R. I geocoded addresses in RStudio. I followed the ap
 
     ![](ogden_geocoding_script2.png)
 
-Once you have geocoded the addresses, you should have the latitude and longitude columns filled. Remove the NAs from the other columns.
+Once you have geocoded the addresses, the latitude and longitude columns should be filled. Remove the NAs from the other columns.
 
 ![](ogden_geocoded_addresses.png)
 
@@ -104,12 +104,10 @@ You can add more than one sheet to a dashboard. My example uses one sheet, the O
 
 ### 5. Download dashboard as image
 
-4.  Once you are satisfied, download the dashboard. I downloaded my dashboard as an image.
+Once you are satisfied, download the dashboard. I downloaded my dashboard as an image. From this map, I am able to see that the siding AI model determined that many of the houses in Ogden have poor siding.
 
-    From this I am able to see that the siding AI model determined that many of the houses in Ogden have poor siding.
+![](ogden_siding_dashboard.png){fig-align="center"}
 
-    ![](ogden_siding_dashboard.png)
+## Conclusion
 
-    ## Conclusion
-
-    This concludes the guide to mapping house quality. Hopefully this has given you information that is helpful when preparing and visualizing spatial data. Again, if you're using Tableau Public, don't forget save your work by publishing! My work has been lost a couple times because I forgot to publish).
+This concludes the guide to mapping house quality. Hopefully this has given information that is helpful when preparing and visualizing spatial data. Again, if you're using Tableau Public, don't forget save work by publishing. My work has been lost a couple times because I forgot to publish.
