@@ -74,8 +74,42 @@ There are many different ways you can map these addresses. If you have access to
 
 As a student, you can register to get [Tableau Desktop free for one year.](https://www.tableau.com/academic/students) I was having installation issues, so I use [Tableau Public, which is free to anyone.](https://public.tableau.com/app/discover) You can use either for these visualizations, but my steps will be for Tableau Public. The desktop version is very similar so you should be able to follow along if using Tableau Desktop.
 
+If you are using Tableau Public, be sure to save you work by publishing.
+
 ### 2. Create a new workbook and upload new data
 
 Once you click "Create", you should be prompted to upload data from your computer. Select the csv file you wish to use. I am using ogden_database.csv.
 
-### 
+### 3. Creating the map
+
+Watching [this video](https://www.youtube.com/watch?v=X0n0s0gzcvE) by TutorialsPoint helped me get started on mapping in Tableau.
+
+After uploaded the data, click the sheet tab on the bottom. I renamed my sheet to ogden_siding. From the "Data" tab on the left side of the screen, find Lon and Lat and drag both to columns and rows at the top of the screen. Right click on Lon and Lat and make sure that *Dimension* is checked, not attribute or measure. When this is done, you can click the "Show Me" button on the upper right part of the screen. Click on the map that is circled in the image. You should then be able to see addresses on a map. Click size to shrink or grow the points. To show a particular housing attribute, drag the desired variable to the "Color" button that is circled under the marks section.
+
+In my example, when the mouse hovers over a point, it will give the condition of the house's siding.
+
+At the top of the screen, go to Map -\> Basemap -\> Streets to add a streetmap.
+
+![](ogden_siding.png)
+
+### 4. Create a dashboard
+
+Once you are satisfied with how your map looks, create a new dashboard at the bottom of the screen. Load in the sheet by dragging the sheet you want to use. In the dashboard, make edits to legend, title, and map scale.
+
+![Right-click on legend to find options to change legend colors, attribute names (edit alias), and more.](colors.png){fig-align="center" width="544"}
+
+You may wish to continue to experiment with point size, borders and halos once you see how it looks in the dashboard.
+
+### 5. Download dashboard as image
+
+4.  Once you are complete, you can download the dashboard. I downloaded my dashboard as an image. You can add more than one sheet to a dashboard. My example uses one sheet, the Ogden siding sheet.
+
+    In my dashboard, I right-clicked the null attribute and clicked "exclude". Now my map only shows houses with either chipped paint, poor siding or good siding.
+
+    From this I am able to see that the siding AI model determined that many of the houses in Ogden have poor siding.
+
+    ![](ogden_siding_dashboard.png)
+
+    ### 5. Conclusion
+
+    This concludes the guide to mapping house quality. Hopefully this has given you information that is helpful when preparing and visualizing spatial data. Again, if you're using Tableau Public, don't forget save your work by publishing! My work has been lost a couple times because I forgot to publish).
