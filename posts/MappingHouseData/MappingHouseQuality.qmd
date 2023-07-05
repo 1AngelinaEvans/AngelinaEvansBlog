@@ -1,5 +1,5 @@
 ---
-title: "Geographic Visualization of House Quality"
+title: "Guide to Visualizing House Quality"
 author: "Angelina Evans"
 date: "2023-06-29"
 categories: "Mapping"
@@ -8,7 +8,7 @@ toc: True
 
 # Creating Geographic Visualizations of House Quality
 
-## Intro
+## Introduction
 
 In this guide, I will be sharing the steps I took to create geographic visualizations in Tableau related to housing quality. To demonstrate the process, I will be using data from the city of Ogden, Iowa. Another AI Housing team member, Gavin, created a [guide on evaluating cities](https://gavinfishy.github.io/Gavin_DSPG_Blog/posts/Gavin-Fisher_guide_w7/full_guide.html) using Ogden as an example. In hopes that the data will appear familiar, I will be using the resulting data from his city evaluation guide.
 
@@ -66,7 +66,7 @@ Once you have geocoded the addresses, you should have the latitude and longitude
 
 ![](ogden_geocoded_addresses.png)
 
-## Mapping addresses from csv file using Tableau
+## Mapping house quality ratings using Tableau
 
 There are many different ways you can map these addresses. If you have access to ArcGIS pro, you can use that. I also like using QGIS, an open source software. In this guide I will be using Tableau because this is what I used for my final visualizations. We decided to use Tableau because we needed to create other visualizations (ex. graphs) with the data provided in the csv file.
 
