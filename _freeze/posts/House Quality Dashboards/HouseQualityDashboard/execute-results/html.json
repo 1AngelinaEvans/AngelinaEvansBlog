@@ -1,0 +1,14 @@
+{
+  "hash": "6739aeaff1231eea40bf338333ab4ba7",
+  "result": {
+    "markdown": "---\ntitle: \"House Quality Dashboards\"\nauthor: \"Angelina Evans\"\ndate: \"2023-07-06\"\ncategories: [\"Mapping\"]\ntoc: True\n---\n\n\n# Dashboards for House Quality\n\n\n\n\n```{=html}\n<div class='tableauPlaceholder' id='viz1688576064213' style='position: relative'><noscript><a href='#'><img alt='New Hampton Siding Quality ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AI&#47;AIHousingVisualizations&#47;NH_Siding_No_Null&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AIHousingVisualizations&#47;NH_Siding_No_Null' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AI&#47;AIHousingVisualizations&#47;NH_Siding_No_Null&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1688576064213');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>\n\n\n</div>\n  \n  \n\n  \n  \n</head>\n<body>\nMy Dashboard.\n  <script>\n  var containerDiv = document.getElementById(\"vizContainer\"),\n\n          url = \"https://public.tableau.com/views/AIHousingVisualizations/NH_Siding_No_Null?:language=en-US&:display_count=n&:origin=viz_share_link\",\n\n          options = {\n            hideTabs: true,\n            hideToolbar: true,\n            onFirstInteractive: function() {\n              console.log(\"Run this code when the viz has finished loading.\");\n            }\n          };\n\n        viz = new tableau.Viz(containerDiv, url, options);\n        // Create a viz object and embed it in the container div.\n  </script>\n  \n</body>\n</html>\n```",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
