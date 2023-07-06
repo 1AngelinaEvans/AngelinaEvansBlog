@@ -3,7 +3,6 @@ title: "House Quality Dashboards"
 author: "Angelina Evans"
 date: "2023-07-06"
 categories: ["Mapping"]
-toc: True
 ---
 
 # Dashboards for House Quality
