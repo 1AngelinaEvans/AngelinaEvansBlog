@@ -26,4 +26,4 @@ categories: ["Mapping"]
 </html>
   
 ```
-![](SidingTreemap.png){fig-align="center"}
+![](SidingTreemap.png){fig-align="center" width="367"}
