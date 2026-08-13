@@ -186,18 +186,13 @@ ul.task-list li input[type="checkbox"] {
 <li><p>City</p></li>
 <li><p>State</p></li>
 <li><p>Quality of house characteristics you wish to use in your geographic visualizations (ex. AI outputs for siding, vegetation, gutter).</p>
-<p>If you followed the steps in the address collection and cleaning section of Gavin’s guide, your dataset might have some columns that look like this:</p>
-<p><img src="Ogden_Database.png" class="img-fluid"></p></li>
+<p>If you followed the steps in the address collection and cleaning section of Gavin’s guide, your dataset might have some columns.</p>
+</li>
 </ul>
 <p>I suggest creating a new column that has combines contents from address, city, and state. I auto-populated the city column with the city name (Ogden) and the state column with the state name (Iowa). In a new column and new empty cell, I used the &amp; to combine the contents of three columns. My function is:</p>
 <p><strong>=Cell&amp;“,”&amp;Cell&amp;“,”Cell</strong></p>
 <p>=A2&amp;“,”&amp;B2&amp;“,”&amp;C2</p>
 <p>Then I auto-populated the rest of the cells to utilize the same function.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="ogden_database_w_address.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
 </section>
 <section id="geocoding-addresses-in-r" class="level2">
 <h2 class="anchored" data-anchor-id="geocoding-addresses-in-r">Geocoding Addresses in R</h2>
@@ -214,7 +209,6 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="ogden_geocoding_script2.png" class="img-fluid"></p></li>
 </ol>
 <p>Once you have geocoded the addresses, the latitude and longitude columns should be filled. Remove the NAs from the other columns.</p>
-<p><img src="ogden_geocoded_addresses.png" class="img-fluid"></p>
 </section>
 <section id="mapping-house-quality-ratings-using-tableau" class="level2">
 <h2 class="anchored" data-anchor-id="mapping-house-quality-ratings-using-tableau">Mapping house quality ratings using Tableau</h2>
