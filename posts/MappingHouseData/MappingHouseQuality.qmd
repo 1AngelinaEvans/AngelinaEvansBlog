@@ -26,9 +26,8 @@ Steps for address collection and dataset cleaning are shown in the [address coll
 
 -   Quality of house characteristics you wish to use in your geographic visualizations (ex. AI outputs for siding, vegetation, gutter).
 
-    If you followed the steps in the address collection and cleaning section of Gavin's guide, the dataset might have some columns that look like this:
+    If you followed the steps in the address collection and cleaning section of Gavin's guide, the dataset might have some columns.
 
-    ![](Ogden_Database.png)
 
 I suggest creating a new column that has combines contents from address, city, and state. I auto-populated the city column with the city name (Ogden) and the state column with the state name (Iowa). In a new column and new empty cell, I used the & to combine the contents of three columns. My function is:
 
@@ -37,8 +36,6 @@ I suggest creating a new column that has combines contents from address, city, a
 =A2&","&B2&","&C2
 
 Then I auto-populated the rest of the cells to utilize the same function.
-
-![](ogden_database_w_address.png){fig-align="center"}
 
 ## Geocoding Addresses in R
 
@@ -64,7 +61,6 @@ You can also use python or R. I geocoded addresses in RStudio. I followed the ap
 
 Once you have geocoded the addresses, the latitude and longitude columns should be filled. I removed the NAs from the other columns.
 
-![](ogden_geocoded_addresses.png)
 
 ## Mapping house quality ratings using Tableau
 
