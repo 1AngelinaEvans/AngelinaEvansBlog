@@ -14,7 +14,7 @@ Spatial analysis and cartography for the Iowa State University Data Science for 
 
 A documented methodology written during the internship, covering the full workflow from address cleaning through geocoding in R to final cartographic output. Published as a Quarto site.
 
-**Live site:** 1angelinaevans.github.io/iowa-housing-condition-mapping/
+**Live site:** https://1angelinaevans.github.io/iowa-housing-condition-mapping/
 
 ## Note on data privacy
 
