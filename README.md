@@ -1,6 +1,6 @@
 # Iowa Housing Condition Mapping
 
-Spatial analysis and cartography for the Iowa State University Data Science for the Public Good program, AI Housing team, May to July 2023.
+Spatial analysis and cartography for Iowa State University Data Science for the Public Good program, AI Housing team, May to July 2023.
 
 **Problem.** Four small Iowa communities, Ogden, Grundy Center, New Hampton, and Independence, needed a housing condition inventory to support local planning. No existing spatial dataset described the condition of individual properties.
 
